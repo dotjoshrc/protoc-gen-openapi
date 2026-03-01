@@ -12,8 +12,8 @@ import (
 	"google.golang.org/protobuf/proto"
 	"gopkg.in/yaml.v3"
 
-	oapiv1 "github.com/technicallyjosh/protoc-gen-openapi/api/oapi/v1"
-	"github.com/technicallyjosh/protoc-gen-openapi/internal/generator/util"
+	oapiv1 "github.com/dotjoshrc/protoc-gen-openapi/internal/gen/go/oapi/v1"
+	"github.com/dotjoshrc/protoc-gen-openapi/internal/generator/util"
 )
 
 // Config holds the configuration for the generator.

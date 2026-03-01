@@ -63,7 +63,7 @@ jobs:
           version=$(git describe --abbrev=0 --match "v*.*.*" || echo "v0.1.0")
           echo "version=$version" >> $GITHUB_OUTPUT
       - name: Next Version
-        uses: technicallyjosh/next-version-action@v1
+        uses: dotjoshrc/next-version-action@v1
         id: version
         with:
           version: ${{ steps.get_version.outputs.version }}

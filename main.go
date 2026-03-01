@@ -7,7 +7,7 @@ import (
 	"google.golang.org/protobuf/types/descriptorpb"
 	"google.golang.org/protobuf/types/pluginpb"
 
-	"github.com/technicallyjosh/protoc-gen-openapi/internal/generator"
+	"github.com/dotjoshrc/protoc-gen-openapi/internal/generator"
 )
 
 func main() {

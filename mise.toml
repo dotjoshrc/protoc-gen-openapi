@@ -1,0 +1,26 @@
+[tools]
+buf = "1.66.0"
+go = "1.25"
+gofumpt = "0.9"
+golangci-lint = "2.10"
+
+[tasks]
+[tasks.lint]
+run = [
+  "golangci-lint run",
+  "buf lint",
+  "buf breaking --against 'https://github.com/dotjoshrc/protoc-gen-openapi.git#branch=main'"
+]
+
+[tasks.generate]
+alias = "gen"
+run = "buf generate"
+
+[tasks.test]
+run = "go test -v ./..."
+
+[tasks.format]
+run = [
+  "buf format -w",
+  "gofumpt -w ."
+]

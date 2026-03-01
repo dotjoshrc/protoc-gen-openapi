@@ -1,0 +1,13 @@
+version: v2
+breaking:
+  use:
+    - FILE
+lint:
+  use:
+    - STANDARD
+  except:
+    - PACKAGE_DIRECTORY_MATCH
+modules:
+  - path: proto/oapi/v1
+    # TODO: Change this to dotjoshrc
+    name: buf.build/technicallyjosh/protoc-gen-openapi

@@ -11,8 +11,8 @@ import (
 	"google.golang.org/protobuf/reflect/protoreflect"
 	"google.golang.org/protobuf/types/descriptorpb"
 
-	oapiv1 "github.com/technicallyjosh/protoc-gen-openapi/api/oapi/v1"
-	"github.com/technicallyjosh/protoc-gen-openapi/internal/generator/util"
+	oapiv1 "github.com/dotjoshrc/protoc-gen-openapi/internal/gen/go/oapi/v1"
+	"github.com/dotjoshrc/protoc-gen-openapi/internal/generator/util"
 )
 
 // addSchemasToDoc adds all non "request" and "response" messages as schemas to the OAPI doc.

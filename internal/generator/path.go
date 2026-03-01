@@ -11,7 +11,7 @@ import (
 	"google.golang.org/protobuf/compiler/protogen"
 	"google.golang.org/protobuf/proto"
 
-	oapiv1 "github.com/technicallyjosh/protoc-gen-openapi/api/oapi/v1"
+	oapiv1 "github.com/dotjoshrc/protoc-gen-openapi/internal/gen/go/oapi/v1"
 )
 
 func NewServer(host string) (*openapi3.Server, error) {

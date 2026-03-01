@@ -6,9 +6,9 @@ import "oapi/v1/file.proto";
 import "oapi/v1/method.proto";
 import "oapi/v1/service.proto";
 
-option go_package = "github.com/technicallyjosh/protoc-gen-openapi/test_api";
+option go_package = "github.com/dotjoshrc/protoc-gen-openapi/test/api";
 option (oapi.v1.file) = {
-  servers {url: "swagger.io"}
+  servers: {url: "swagger.io"}
   prefix: "/v1"
 
   security_schemes: {
@@ -31,8 +31,8 @@ option (oapi.v1.file) = {
 
 service TestService {
   option (oapi.v1.service) = {
-    servers {url: "api.swagger.io"}
-    add_servers {url: "api.added.io"}
+    servers: {url: "api.swagger.io"}
+    add_servers: {url: "api.added.io"}
     x_display_name: "Test Service"
     x_tag_group: "Test Group"
   };
@@ -51,7 +51,7 @@ service TestService {
 
 service Test2Service {
   option (oapi.v1.service) = {
-    add_servers {url: "api.added.io"}
+    add_servers: {url: "api.added.io"}
     x_display_name: "Test 2 Service"
     x_tag_group: "Test 2 Group"
   };

@@ -1,8 +1,8 @@
-version: v1
+version: v2
+clean: true
 managed:
   enabled: true
-
 plugins:
-  - plugin: buf.build/protocolbuffers/go:v1.33.0
-    out: api
+  - remote: buf.build/protocolbuffers/go:v1.36.11
+    out: internal/gen/go/oapi/v1
     opt: paths=source_relative

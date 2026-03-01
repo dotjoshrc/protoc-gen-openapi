@@ -1,8 +1,8 @@
 # protoc-gen-openapi
 
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/technicallyjosh/protoc-gen-openapi?style=flat-square)
-[![lint status](https://img.shields.io/github/actions/workflow/status/technicallyjosh/protoc-gen-openapi/run-lint.yaml?style=flat-square&label=lint)](https://github.com/technicallyjosh/protoc-gen-openapi/actions/workflows/run-lint.yaml)
-[![go report card](https://goreportcard.com/badge/github.com/technicallyjosh/protoc-gen-openapi?style=flat-square)](https://goreportcard.com/report/github.com/technicallyjosh/protoc-gen-openapi)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/dotjoshrc/protoc-gen-openapi?style=flat-square)
+[![lint status](https://img.shields.io/github/actions/workflow/status/technicallyjosh/protoc-gen-openapi/run-lint.yaml?style=flat-square&label=lint)](https://github.com/dotjoshrc/protoc-gen-openapi/actions/workflows/run-lint.yaml)
+[![go report card](https://goreportcard.com/badge/github.com/dotjoshrc/protoc-gen-openapi?style=flat-square)](https://goreportcard.com/report/github.com/technicallyjosh/protoc-gen-openapi)
 
 **Yes**, this is _another_ protoc generator for OpenAPI. I created this for a
 couple
@@ -66,7 +66,7 @@ protoc \
 ```yaml
 # ... other things
 deps:
-  - buf.build/technicallyjosh/protoc-gen-openapi
+  - buf.build/dotjoshrc/protoc-gen-openapi
 ```
 
 **buf.gen.yaml**

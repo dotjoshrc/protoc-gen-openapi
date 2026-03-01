@@ -3,7 +3,7 @@ package generator
 import (
 	"google.golang.org/protobuf/compiler/protogen"
 
-	"github.com/technicallyjosh/protoc-gen-openapi/internal/generator/util"
+	"github.com/dotjoshrc/protoc-gen-openapi/internal/generator/util"
 )
 
 // allMessages holds all messages with their full paths for reference whenever we need to look

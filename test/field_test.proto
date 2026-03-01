@@ -8,7 +8,7 @@ import "oapi/v1/file.proto";
 import "oapi/v1/method.proto";
 import "oapi/v1/service.proto";
 
-option go_package = "github.com/technicallyjosh/protoc-gen-openapi/test_api";
+option go_package = "github.com/dotjoshrc/protoc-gen-openapi/test/api";
 option (oapi.v1.file) = {
   host: "swagger.io"
   prefix: "/v1"

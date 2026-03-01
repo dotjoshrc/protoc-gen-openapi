@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package test.api;
 
-option go_package = "github.com/technicallyjosh/protoc-gen-openapi/test/api";
+option go_package = "github.com/dotjoshrc/protoc-gen-openapi/test/api";
 
 message Error {
   string code = 1;
