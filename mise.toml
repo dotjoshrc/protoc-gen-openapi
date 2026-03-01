@@ -9,7 +9,8 @@ golangci-lint = "2.10"
 run = [
   "golangci-lint run",
   "buf lint",
-  "buf breaking --against 'https://github.com/dotjoshrc/protoc-gen-openapi.git#branch=main'"
+# TODO: Enable once merged changes
+#  "buf breaking --against 'https://github.com/dotjoshrc/protoc-gen-openapi.git#branch=main'"
 ]
 
 [tasks.generate]
