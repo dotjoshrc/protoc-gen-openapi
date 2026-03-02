@@ -3,37 +3,37 @@ syntax = "proto3";
 package test.api;
 
 import "google/protobuf/timestamp.proto";
-import "oapi/v1/field.proto";
-import "oapi/v1/file.proto";
-import "oapi/v1/method.proto";
-import "oapi/v1/service.proto";
+import "dotjoshrc/oapi/v1/field.proto";
+import "dotjoshrc/oapi/v1/file.proto";
+import "dotjoshrc/oapi/v1/method.proto";
+import "dotjoshrc/oapi/v1/service.proto";
 
 option go_package = "github.com/dotjoshrc/protoc-gen-openapi/test/api";
-option (oapi.v1.file) = {
+option (dotjoshrc.oapi.v1.file) = {
   host: "swagger.io"
   prefix: "/v1"
 };
 
 service TestService {
-  option (oapi.v1.service) = {
+  option (dotjoshrc.oapi.v1.service) = {
     host: "api.swagger.io"
     x_display_name: "Test Service"
     x_tag_group: "Test Group"
   };
 
   rpc TestFieldTypes(TestFieldTypesRequest) returns (TestFieldTypesResponse) {
-    option (oapi.v1.method) = {post: "TestFieldTypes"};
+    option (dotjoshrc.oapi.v1.method) = {post: "TestFieldTypes"};
   }
 
   rpc TestFieldExamples(TestFieldExamplesRequest) returns (TestFieldExamplesResponse) {
-    option (oapi.v1.method) = {post: "TestFieldExamples"};
+    option (dotjoshrc.oapi.v1.method) = {post: "TestFieldExamples"};
   }
 }
 
 message MessageRequest {
   string string = 1;
-  string required_string = 2 [(oapi.v1.required) = true];
-  string required_string2 = 3 [(oapi.v1.options).required = true];
+  string required_string = 2 [(dotjoshrc.oapi.v1.required) = true];
+  string required_string2 = 3 [(dotjoshrc.oapi.v1.options).required = true];
 }
 
 message TestFieldTypesRequest {
@@ -41,7 +41,7 @@ message TestFieldTypesRequest {
     string string = 1;
   }
 
-  string string = 1 [(oapi.v1.options) = {
+  string string = 1 [(dotjoshrc.oapi.v1.options) = {
     enum: ["test"]
   }];
   bool bool = 2;
@@ -52,7 +52,7 @@ message TestFieldTypesRequest {
   repeated string repeated_string = 7;
   repeated Message repeated_message = 8;
   repeated MessageRequest repeated_request = 9;
-  google.protobuf.Timestamp message_at = 10 [(oapi.v1.options) = {
+  google.protobuf.Timestamp message_at = 10 [(dotjoshrc.oapi.v1.options) = {
     as_type: "string"
     format: "date-time"
   }];

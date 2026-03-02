@@ -12,7 +12,7 @@ import (
 	"google.golang.org/protobuf/proto"
 	"gopkg.in/yaml.v3"
 
-	oapiv1 "github.com/dotjoshrc/protoc-gen-openapi/internal/gen/go/oapi/v1"
+	oapiv1 "github.com/dotjoshrc/protoc-gen-openapi/gen/go/dotjoshrc/oapi/v1"
 	"github.com/dotjoshrc/protoc-gen-openapi/internal/generator/util"
 )
 

@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-package oapi.v1;
+package dotjoshrc.oapi.v1;
 
-option go_package = "github.com/dotjoshrc/protoc-gen-openapi/internal/gen/go/oapi/v1;oapiv1";
+option go_package = "github.com/dotjoshrc/protoc-gen-openapi/gen/go/dotjoshrc/oapi/v1;oapiv1";
 
 message SecurityScheme {
   message Scheme {

@@ -1,4 +1,4 @@
-FROM golang:1.24-alpine3.19 as build
+FROM dhi/golang:1.25
 
 ENV CGO_ENABLED=0
 

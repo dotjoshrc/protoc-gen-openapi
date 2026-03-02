@@ -3,6 +3,7 @@ buf = "1.66.0"
 go = "1.25"
 gofumpt = "0.9"
 golangci-lint = "2.10"
+protoc = "34"
 
 [tasks]
 [tasks.lint]

@@ -2,7 +2,7 @@
 // versions:
 // 	protoc-gen-go v1.36.11
 // 	protoc        (unknown)
-// source: service.proto
+// source: dotjoshrc/oapi/v1/service.proto
 
 package oapiv1
 
@@ -27,7 +27,7 @@ type ServiceOptions struct {
 	// The default host for all methods within the service. This overrides the
 	// file definition and can be overridden by a method definition.
 	//
-	// Deprecated: Marked as deprecated in service.proto.
+	// Deprecated: Marked as deprecated in dotjoshrc/oapi/v1/service.proto.
 	Host string `protobuf:"bytes,1,opt,name=host,proto3" json:"host,omitempty"`
 	// This prefix is applied to each method in the service. Can be overridden by
 	// a method definition.
@@ -65,7 +65,7 @@ type ServiceOptions struct {
 
 func (x *ServiceOptions) Reset() {
 	*x = ServiceOptions{}
-	mi := &file_service_proto_msgTypes[0]
+	mi := &file_dotjoshrc_oapi_v1_service_proto_msgTypes[0]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -77,7 +77,7 @@ func (x *ServiceOptions) String() string {
 func (*ServiceOptions) ProtoMessage() {}
 
 func (x *ServiceOptions) ProtoReflect() protoreflect.Message {
-	mi := &file_service_proto_msgTypes[0]
+	mi := &file_dotjoshrc_oapi_v1_service_proto_msgTypes[0]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -90,10 +90,10 @@ func (x *ServiceOptions) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ServiceOptions.ProtoReflect.Descriptor instead.
 func (*ServiceOptions) Descriptor() ([]byte, []int) {
-	return file_service_proto_rawDescGZIP(), []int{0}
+	return file_dotjoshrc_oapi_v1_service_proto_rawDescGZIP(), []int{0}
 }
 
-// Deprecated: Marked as deprecated in service.proto.
+// Deprecated: Marked as deprecated in dotjoshrc/oapi/v1/service.proto.
 func (x *ServiceOptions) GetHost() string {
 	if x != nil {
 		return x.Host
@@ -185,77 +185,77 @@ func (x *ServiceOptions) GetAddServers() []*Server {
 	return nil
 }
 
-var file_service_proto_extTypes = []protoimpl.ExtensionInfo{
+var file_dotjoshrc_oapi_v1_service_proto_extTypes = []protoimpl.ExtensionInfo{
 	{
 		ExtendedType:  (*descriptorpb.ServiceOptions)(nil),
 		ExtensionType: (*ServiceOptions)(nil),
 		Field:         5150,
-		Name:          "oapi.v1.service",
+		Name:          "dotjoshrc.oapi.v1.service",
 		Tag:           "bytes,5150,opt,name=service",
-		Filename:      "service.proto",
+		Filename:      "dotjoshrc/oapi/v1/service.proto",
 	},
 }
 
 // Extension fields to descriptorpb.ServiceOptions.
 var (
-	// optional oapi.v1.ServiceOptions service = 5150;
-	E_Service = &file_service_proto_extTypes[0]
+	// optional dotjoshrc.oapi.v1.ServiceOptions service = 5150;
+	E_Service = &file_dotjoshrc_oapi_v1_service_proto_extTypes[0]
 )
 
-var File_service_proto protoreflect.FileDescriptor
+var File_dotjoshrc_oapi_v1_service_proto protoreflect.FileDescriptor
 
-const file_service_proto_rawDesc = "" +
+const file_dotjoshrc_oapi_v1_service_proto_rawDesc = "" +
 	"\n" +
-	"\rservice.proto\x12\aoapi.v1\x1a google/protobuf/descriptor.proto\x1a\x0fparameter.proto\x1a\x0esecurity.proto\x1a\fserver.proto\"\xd6\x04\n" +
+	"\x1fdotjoshrc/oapi/v1/service.proto\x12\x11dotjoshrc.oapi.v1\x1a!dotjoshrc/oapi/v1/parameter.proto\x1a dotjoshrc/oapi/v1/security.proto\x1a\x1edotjoshrc/oapi/v1/server.proto\x1a google/protobuf/descriptor.proto\"\x9c\x05\n" +
 	"\x0eServiceOptions\x12\x16\n" +
 	"\x04host\x18\x01 \x01(\tB\x02\x18\x01R\x04host\x12\x16\n" +
 	"\x06prefix\x18\x02 \x01(\tR\x06prefix\x12!\n" +
 	"\fcontent_type\x18\x03 \x01(\tR\vcontentType\x12)\n" +
 	"\x10default_response\x18\x04 \x01(\tR\x0fdefaultResponse\x12$\n" +
 	"\x0ex_display_name\x18\x05 \x01(\tR\fxDisplayName\x12\x1e\n" +
-	"\vx_tag_group\x18\x06 \x01(\tR\txTagGroup\x129\n" +
-	"\x0epath_parameter\x18\a \x03(\v2\x12.oapi.v1.ParameterR\rpathParameter\x12;\n" +
-	"\x0fquery_parameter\x18\b \x03(\v2\x12.oapi.v1.ParameterR\x0equeryParameter\x12=\n" +
-	"\x10header_parameter\x18\t \x03(\v2\x12.oapi.v1.ParameterR\x0fheaderParameter\x12=\n" +
+	"\vx_tag_group\x18\x06 \x01(\tR\txTagGroup\x12C\n" +
+	"\x0epath_parameter\x18\a \x03(\v2\x1c.dotjoshrc.oapi.v1.ParameterR\rpathParameter\x12E\n" +
+	"\x0fquery_parameter\x18\b \x03(\v2\x1c.dotjoshrc.oapi.v1.ParameterR\x0equeryParameter\x12G\n" +
+	"\x10header_parameter\x18\t \x03(\v2\x1c.dotjoshrc.oapi.v1.ParameterR\x0fheaderParameter\x12G\n" +
 	"\x10cookie_parameter\x18\n" +
-	" \x03(\v2\x12.oapi.v1.ParameterR\x0fcookieParameter\x12-\n" +
-	"\bsecurity\x18\v \x03(\v2\x11.oapi.v1.SecurityR\bsecurity\x12)\n" +
-	"\aservers\x18\f \x03(\v2\x0f.oapi.v1.ServerR\aservers\x120\n" +
-	"\vadd_servers\x18\r \x03(\v2\x0f.oapi.v1.ServerR\n" +
-	"addServers:S\n" +
-	"\aservice\x12\x1f.google.protobuf.ServiceOptions\x18\x9e( \x01(\v2\x17.oapi.v1.ServiceOptionsR\aserviceB\xa0\x01\n" +
-	"\vcom.oapi.v1B\fServiceProtoP\x01ZFgithub.com/dotjoshrc/protoc-gen-openapi/internal/gen/go/oapi/v1;oapiv1\xa2\x02\x03OXX\xaa\x02\aOapi.V1\xca\x02\aOapi\\V1\xe2\x02\x13Oapi\\V1\\GPBMetadata\xea\x02\bOapi::V1b\x06proto3"
+	" \x03(\v2\x1c.dotjoshrc.oapi.v1.ParameterR\x0fcookieParameter\x127\n" +
+	"\bsecurity\x18\v \x03(\v2\x1b.dotjoshrc.oapi.v1.SecurityR\bsecurity\x123\n" +
+	"\aservers\x18\f \x03(\v2\x19.dotjoshrc.oapi.v1.ServerR\aservers\x12:\n" +
+	"\vadd_servers\x18\r \x03(\v2\x19.dotjoshrc.oapi.v1.ServerR\n" +
+	"addServers:]\n" +
+	"\aservice\x12\x1f.google.protobuf.ServiceOptions\x18\x9e( \x01(\v2!.dotjoshrc.oapi.v1.ServiceOptionsR\aserviceB\xd4\x01\n" +
+	"\x15com.dotjoshrc.oapi.v1B\fServiceProtoP\x01ZGgithub.com/dotjoshrc/protoc-gen-openapi/gen/go/dotjoshrc/oapi/v1;oapiv1\xa2\x02\x03DOX\xaa\x02\x11Dotjoshrc.Oapi.V1\xca\x02\x11Dotjoshrc\\Oapi\\V1\xe2\x02\x1dDotjoshrc\\Oapi\\V1\\GPBMetadata\xea\x02\x13Dotjoshrc::Oapi::V1b\x06proto3"
 
 var (
-	file_service_proto_rawDescOnce sync.Once
-	file_service_proto_rawDescData []byte
+	file_dotjoshrc_oapi_v1_service_proto_rawDescOnce sync.Once
+	file_dotjoshrc_oapi_v1_service_proto_rawDescData []byte
 )
 
-func file_service_proto_rawDescGZIP() []byte {
-	file_service_proto_rawDescOnce.Do(func() {
-		file_service_proto_rawDescData = protoimpl.X.CompressGZIP(unsafe.Slice(unsafe.StringData(file_service_proto_rawDesc), len(file_service_proto_rawDesc)))
+func file_dotjoshrc_oapi_v1_service_proto_rawDescGZIP() []byte {
+	file_dotjoshrc_oapi_v1_service_proto_rawDescOnce.Do(func() {
+		file_dotjoshrc_oapi_v1_service_proto_rawDescData = protoimpl.X.CompressGZIP(unsafe.Slice(unsafe.StringData(file_dotjoshrc_oapi_v1_service_proto_rawDesc), len(file_dotjoshrc_oapi_v1_service_proto_rawDesc)))
 	})
-	return file_service_proto_rawDescData
+	return file_dotjoshrc_oapi_v1_service_proto_rawDescData
 }
 
-var file_service_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
-var file_service_proto_goTypes = []any{
-	(*ServiceOptions)(nil),              // 0: oapi.v1.ServiceOptions
-	(*Parameter)(nil),                   // 1: oapi.v1.Parameter
-	(*Security)(nil),                    // 2: oapi.v1.Security
-	(*Server)(nil),                      // 3: oapi.v1.Server
+var file_dotjoshrc_oapi_v1_service_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
+var file_dotjoshrc_oapi_v1_service_proto_goTypes = []any{
+	(*ServiceOptions)(nil),              // 0: dotjoshrc.oapi.v1.ServiceOptions
+	(*Parameter)(nil),                   // 1: dotjoshrc.oapi.v1.Parameter
+	(*Security)(nil),                    // 2: dotjoshrc.oapi.v1.Security
+	(*Server)(nil),                      // 3: dotjoshrc.oapi.v1.Server
 	(*descriptorpb.ServiceOptions)(nil), // 4: google.protobuf.ServiceOptions
 }
-var file_service_proto_depIdxs = []int32{
-	1, // 0: oapi.v1.ServiceOptions.path_parameter:type_name -> oapi.v1.Parameter
-	1, // 1: oapi.v1.ServiceOptions.query_parameter:type_name -> oapi.v1.Parameter
-	1, // 2: oapi.v1.ServiceOptions.header_parameter:type_name -> oapi.v1.Parameter
-	1, // 3: oapi.v1.ServiceOptions.cookie_parameter:type_name -> oapi.v1.Parameter
-	2, // 4: oapi.v1.ServiceOptions.security:type_name -> oapi.v1.Security
-	3, // 5: oapi.v1.ServiceOptions.servers:type_name -> oapi.v1.Server
-	3, // 6: oapi.v1.ServiceOptions.add_servers:type_name -> oapi.v1.Server
-	4, // 7: oapi.v1.service:extendee -> google.protobuf.ServiceOptions
-	0, // 8: oapi.v1.service:type_name -> oapi.v1.ServiceOptions
+var file_dotjoshrc_oapi_v1_service_proto_depIdxs = []int32{
+	1, // 0: dotjoshrc.oapi.v1.ServiceOptions.path_parameter:type_name -> dotjoshrc.oapi.v1.Parameter
+	1, // 1: dotjoshrc.oapi.v1.ServiceOptions.query_parameter:type_name -> dotjoshrc.oapi.v1.Parameter
+	1, // 2: dotjoshrc.oapi.v1.ServiceOptions.header_parameter:type_name -> dotjoshrc.oapi.v1.Parameter
+	1, // 3: dotjoshrc.oapi.v1.ServiceOptions.cookie_parameter:type_name -> dotjoshrc.oapi.v1.Parameter
+	2, // 4: dotjoshrc.oapi.v1.ServiceOptions.security:type_name -> dotjoshrc.oapi.v1.Security
+	3, // 5: dotjoshrc.oapi.v1.ServiceOptions.servers:type_name -> dotjoshrc.oapi.v1.Server
+	3, // 6: dotjoshrc.oapi.v1.ServiceOptions.add_servers:type_name -> dotjoshrc.oapi.v1.Server
+	4, // 7: dotjoshrc.oapi.v1.service:extendee -> google.protobuf.ServiceOptions
+	0, // 8: dotjoshrc.oapi.v1.service:type_name -> dotjoshrc.oapi.v1.ServiceOptions
 	9, // [9:9] is the sub-list for method output_type
 	9, // [9:9] is the sub-list for method input_type
 	8, // [8:9] is the sub-list for extension type_name
@@ -263,30 +263,30 @@ var file_service_proto_depIdxs = []int32{
 	0, // [0:7] is the sub-list for field type_name
 }
 
-func init() { file_service_proto_init() }
-func file_service_proto_init() {
-	if File_service_proto != nil {
+func init() { file_dotjoshrc_oapi_v1_service_proto_init() }
+func file_dotjoshrc_oapi_v1_service_proto_init() {
+	if File_dotjoshrc_oapi_v1_service_proto != nil {
 		return
 	}
-	file_parameter_proto_init()
-	file_security_proto_init()
-	file_server_proto_init()
+	file_dotjoshrc_oapi_v1_parameter_proto_init()
+	file_dotjoshrc_oapi_v1_security_proto_init()
+	file_dotjoshrc_oapi_v1_server_proto_init()
 	type x struct{}
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: unsafe.Slice(unsafe.StringData(file_service_proto_rawDesc), len(file_service_proto_rawDesc)),
+			RawDescriptor: unsafe.Slice(unsafe.StringData(file_dotjoshrc_oapi_v1_service_proto_rawDesc), len(file_dotjoshrc_oapi_v1_service_proto_rawDesc)),
 			NumEnums:      0,
 			NumMessages:   1,
 			NumExtensions: 1,
 			NumServices:   0,
 		},
-		GoTypes:           file_service_proto_goTypes,
-		DependencyIndexes: file_service_proto_depIdxs,
-		MessageInfos:      file_service_proto_msgTypes,
-		ExtensionInfos:    file_service_proto_extTypes,
+		GoTypes:           file_dotjoshrc_oapi_v1_service_proto_goTypes,
+		DependencyIndexes: file_dotjoshrc_oapi_v1_service_proto_depIdxs,
+		MessageInfos:      file_dotjoshrc_oapi_v1_service_proto_msgTypes,
+		ExtensionInfos:    file_dotjoshrc_oapi_v1_service_proto_extTypes,
 	}.Build()
-	File_service_proto = out.File
-	file_service_proto_goTypes = nil
-	file_service_proto_depIdxs = nil
+	File_dotjoshrc_oapi_v1_service_proto = out.File
+	file_dotjoshrc_oapi_v1_service_proto_goTypes = nil
+	file_dotjoshrc_oapi_v1_service_proto_depIdxs = nil
 }

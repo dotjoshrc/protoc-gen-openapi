@@ -33,8 +33,7 @@ jobs:
     name: Release Proto
     runs-on: ubuntu-latest
     if: ${{ inputs.type == 'proto' || inputs.type == 'all' }}
-    needs:
-      - lint
+    needs: lint
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -44,14 +43,13 @@ jobs:
         uses: bufbuild/buf-push-action@v1
         with:
           input: proto/oapi/v1
-          buf_token: ${{ secrets.BUF_TOKEN }}
+          buf_token: ${{ secrets.BUF_TOKEN_NEW }}
 
   release_generator:
     name: Release Generator
     runs-on: ubuntu-latest
     if: ${{ inputs.type == 'generator' || inputs.type == 'all' }}
-    needs:
-      - lint
+    needs: lint
     steps:
       - name: Checkout
         uses: actions/checkout@v6

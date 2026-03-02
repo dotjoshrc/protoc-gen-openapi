@@ -2,7 +2,7 @@
 // versions:
 // 	protoc-gen-go v1.36.11
 // 	protoc        (unknown)
-// source: security.proto
+// source: dotjoshrc/oapi/v1/security.proto
 
 package oapiv1
 
@@ -34,7 +34,7 @@ type SecurityScheme struct {
 
 func (x *SecurityScheme) Reset() {
 	*x = SecurityScheme{}
-	mi := &file_security_proto_msgTypes[0]
+	mi := &file_dotjoshrc_oapi_v1_security_proto_msgTypes[0]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -46,7 +46,7 @@ func (x *SecurityScheme) String() string {
 func (*SecurityScheme) ProtoMessage() {}
 
 func (x *SecurityScheme) ProtoReflect() protoreflect.Message {
-	mi := &file_security_proto_msgTypes[0]
+	mi := &file_dotjoshrc_oapi_v1_security_proto_msgTypes[0]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -59,7 +59,7 @@ func (x *SecurityScheme) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SecurityScheme.ProtoReflect.Descriptor instead.
 func (*SecurityScheme) Descriptor() ([]byte, []int) {
-	return file_security_proto_rawDescGZIP(), []int{0}
+	return file_dotjoshrc_oapi_v1_security_proto_rawDescGZIP(), []int{0}
 }
 
 func (x *SecurityScheme) GetName() string {
@@ -88,7 +88,7 @@ type Security struct {
 
 func (x *Security) Reset() {
 	*x = Security{}
-	mi := &file_security_proto_msgTypes[1]
+	mi := &file_dotjoshrc_oapi_v1_security_proto_msgTypes[1]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -100,7 +100,7 @@ func (x *Security) String() string {
 func (*Security) ProtoMessage() {}
 
 func (x *Security) ProtoReflect() protoreflect.Message {
-	mi := &file_security_proto_msgTypes[1]
+	mi := &file_dotjoshrc_oapi_v1_security_proto_msgTypes[1]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -113,7 +113,7 @@ func (x *Security) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Security.ProtoReflect.Descriptor instead.
 func (*Security) Descriptor() ([]byte, []int) {
-	return file_security_proto_rawDescGZIP(), []int{1}
+	return file_dotjoshrc_oapi_v1_security_proto_rawDescGZIP(), []int{1}
 }
 
 func (x *Security) GetName() string {
@@ -154,7 +154,7 @@ type SecurityScheme_Scheme struct {
 
 func (x *SecurityScheme_Scheme) Reset() {
 	*x = SecurityScheme_Scheme{}
-	mi := &file_security_proto_msgTypes[2]
+	mi := &file_dotjoshrc_oapi_v1_security_proto_msgTypes[2]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -166,7 +166,7 @@ func (x *SecurityScheme_Scheme) String() string {
 func (*SecurityScheme_Scheme) ProtoMessage() {}
 
 func (x *SecurityScheme_Scheme) ProtoReflect() protoreflect.Message {
-	mi := &file_security_proto_msgTypes[2]
+	mi := &file_dotjoshrc_oapi_v1_security_proto_msgTypes[2]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -179,7 +179,7 @@ func (x *SecurityScheme_Scheme) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SecurityScheme_Scheme.ProtoReflect.Descriptor instead.
 func (*SecurityScheme_Scheme) Descriptor() ([]byte, []int) {
-	return file_security_proto_rawDescGZIP(), []int{0, 0}
+	return file_dotjoshrc_oapi_v1_security_proto_rawDescGZIP(), []int{0, 0}
 }
 
 func (x *SecurityScheme_Scheme) GetType() string {
@@ -224,14 +224,14 @@ func (x *SecurityScheme_Scheme) GetOpenIdConnectUrl() string {
 	return ""
 }
 
-var File_security_proto protoreflect.FileDescriptor
+var File_dotjoshrc_oapi_v1_security_proto protoreflect.FileDescriptor
 
-const file_security_proto_rawDesc = "" +
+const file_dotjoshrc_oapi_v1_security_proto_rawDesc = "" +
 	"\n" +
-	"\x0esecurity.proto\x12\aoapi.v1\"\x8b\x02\n" +
+	" dotjoshrc/oapi/v1/security.proto\x12\x11dotjoshrc.oapi.v1\"\x95\x02\n" +
 	"\x0eSecurityScheme\x12\x12\n" +
-	"\x04name\x18\x01 \x01(\tR\x04name\x126\n" +
-	"\x06scheme\x18\x02 \x01(\v2\x1e.oapi.v1.SecurityScheme.SchemeR\x06scheme\x1a\xac\x01\n" +
+	"\x04name\x18\x01 \x01(\tR\x04name\x12@\n" +
+	"\x06scheme\x18\x02 \x01(\v2(.dotjoshrc.oapi.v1.SecurityScheme.SchemeR\x06scheme\x1a\xac\x01\n" +
 	"\x06Scheme\x12\x12\n" +
 	"\x04type\x18\x01 \x01(\tR\x04type\x12\x16\n" +
 	"\x06scheme\x18\x02 \x01(\tR\x06scheme\x12\x0e\n" +
@@ -241,29 +241,29 @@ const file_security_proto_rawDesc = "" +
 	"\x13open_id_connect_url\x18\x06 \x01(\tR\x10openIdConnectUrl\"6\n" +
 	"\bSecurity\x12\x12\n" +
 	"\x04name\x18\x01 \x01(\tR\x04name\x12\x16\n" +
-	"\x06scopes\x18\x02 \x03(\tR\x06scopesB\xa1\x01\n" +
-	"\vcom.oapi.v1B\rSecurityProtoP\x01ZFgithub.com/dotjoshrc/protoc-gen-openapi/internal/gen/go/oapi/v1;oapiv1\xa2\x02\x03OXX\xaa\x02\aOapi.V1\xca\x02\aOapi\\V1\xe2\x02\x13Oapi\\V1\\GPBMetadata\xea\x02\bOapi::V1b\x06proto3"
+	"\x06scopes\x18\x02 \x03(\tR\x06scopesB\xd5\x01\n" +
+	"\x15com.dotjoshrc.oapi.v1B\rSecurityProtoP\x01ZGgithub.com/dotjoshrc/protoc-gen-openapi/gen/go/dotjoshrc/oapi/v1;oapiv1\xa2\x02\x03DOX\xaa\x02\x11Dotjoshrc.Oapi.V1\xca\x02\x11Dotjoshrc\\Oapi\\V1\xe2\x02\x1dDotjoshrc\\Oapi\\V1\\GPBMetadata\xea\x02\x13Dotjoshrc::Oapi::V1b\x06proto3"
 
 var (
-	file_security_proto_rawDescOnce sync.Once
-	file_security_proto_rawDescData []byte
+	file_dotjoshrc_oapi_v1_security_proto_rawDescOnce sync.Once
+	file_dotjoshrc_oapi_v1_security_proto_rawDescData []byte
 )
 
-func file_security_proto_rawDescGZIP() []byte {
-	file_security_proto_rawDescOnce.Do(func() {
-		file_security_proto_rawDescData = protoimpl.X.CompressGZIP(unsafe.Slice(unsafe.StringData(file_security_proto_rawDesc), len(file_security_proto_rawDesc)))
+func file_dotjoshrc_oapi_v1_security_proto_rawDescGZIP() []byte {
+	file_dotjoshrc_oapi_v1_security_proto_rawDescOnce.Do(func() {
+		file_dotjoshrc_oapi_v1_security_proto_rawDescData = protoimpl.X.CompressGZIP(unsafe.Slice(unsafe.StringData(file_dotjoshrc_oapi_v1_security_proto_rawDesc), len(file_dotjoshrc_oapi_v1_security_proto_rawDesc)))
 	})
-	return file_security_proto_rawDescData
+	return file_dotjoshrc_oapi_v1_security_proto_rawDescData
 }
 
-var file_security_proto_msgTypes = make([]protoimpl.MessageInfo, 3)
-var file_security_proto_goTypes = []any{
-	(*SecurityScheme)(nil),        // 0: oapi.v1.SecurityScheme
-	(*Security)(nil),              // 1: oapi.v1.Security
-	(*SecurityScheme_Scheme)(nil), // 2: oapi.v1.SecurityScheme.Scheme
+var file_dotjoshrc_oapi_v1_security_proto_msgTypes = make([]protoimpl.MessageInfo, 3)
+var file_dotjoshrc_oapi_v1_security_proto_goTypes = []any{
+	(*SecurityScheme)(nil),        // 0: dotjoshrc.oapi.v1.SecurityScheme
+	(*Security)(nil),              // 1: dotjoshrc.oapi.v1.Security
+	(*SecurityScheme_Scheme)(nil), // 2: dotjoshrc.oapi.v1.SecurityScheme.Scheme
 }
-var file_security_proto_depIdxs = []int32{
-	2, // 0: oapi.v1.SecurityScheme.scheme:type_name -> oapi.v1.SecurityScheme.Scheme
+var file_dotjoshrc_oapi_v1_security_proto_depIdxs = []int32{
+	2, // 0: dotjoshrc.oapi.v1.SecurityScheme.scheme:type_name -> dotjoshrc.oapi.v1.SecurityScheme.Scheme
 	1, // [1:1] is the sub-list for method output_type
 	1, // [1:1] is the sub-list for method input_type
 	1, // [1:1] is the sub-list for extension type_name
@@ -271,26 +271,26 @@ var file_security_proto_depIdxs = []int32{
 	0, // [0:1] is the sub-list for field type_name
 }
 
-func init() { file_security_proto_init() }
-func file_security_proto_init() {
-	if File_security_proto != nil {
+func init() { file_dotjoshrc_oapi_v1_security_proto_init() }
+func file_dotjoshrc_oapi_v1_security_proto_init() {
+	if File_dotjoshrc_oapi_v1_security_proto != nil {
 		return
 	}
 	type x struct{}
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: unsafe.Slice(unsafe.StringData(file_security_proto_rawDesc), len(file_security_proto_rawDesc)),
+			RawDescriptor: unsafe.Slice(unsafe.StringData(file_dotjoshrc_oapi_v1_security_proto_rawDesc), len(file_dotjoshrc_oapi_v1_security_proto_rawDesc)),
 			NumEnums:      0,
 			NumMessages:   3,
 			NumExtensions: 0,
 			NumServices:   0,
 		},
-		GoTypes:           file_security_proto_goTypes,
-		DependencyIndexes: file_security_proto_depIdxs,
-		MessageInfos:      file_security_proto_msgTypes,
+		GoTypes:           file_dotjoshrc_oapi_v1_security_proto_goTypes,
+		DependencyIndexes: file_dotjoshrc_oapi_v1_security_proto_depIdxs,
+		MessageInfos:      file_dotjoshrc_oapi_v1_security_proto_msgTypes,
 	}.Build()
-	File_security_proto = out.File
-	file_security_proto_goTypes = nil
-	file_security_proto_depIdxs = nil
+	File_dotjoshrc_oapi_v1_security_proto = out.File
+	file_dotjoshrc_oapi_v1_security_proto_goTypes = nil
+	file_dotjoshrc_oapi_v1_security_proto_depIdxs = nil
 }

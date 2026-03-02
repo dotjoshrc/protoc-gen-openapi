@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-package oapi.v1;
+package dotjoshrc.oapi.v1;
 
-import "field.proto";
+import "dotjoshrc/oapi/v1/field.proto";
 
-option go_package = "github.com/dotjoshrc/protoc-gen-openapi/internal/gen/go/oapi/v1;oapiv1";
+option go_package = "github.com/dotjoshrc/protoc-gen-openapi/gen/go/dotjoshrc/oapi/v1;oapiv1";
 
 message Parameter {
   enum Type {

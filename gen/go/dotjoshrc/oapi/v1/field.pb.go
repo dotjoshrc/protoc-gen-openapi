@@ -2,7 +2,7 @@
 // versions:
 // 	protoc-gen-go v1.36.11
 // 	protoc        (unknown)
-// source: field.proto
+// source: dotjoshrc/oapi/v1/field.proto
 
 package oapiv1
 
@@ -68,7 +68,7 @@ type FieldOptions struct {
 
 func (x *FieldOptions) Reset() {
 	*x = FieldOptions{}
-	mi := &file_field_proto_msgTypes[0]
+	mi := &file_dotjoshrc_oapi_v1_field_proto_msgTypes[0]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -80,7 +80,7 @@ func (x *FieldOptions) String() string {
 func (*FieldOptions) ProtoMessage() {}
 
 func (x *FieldOptions) ProtoReflect() protoreflect.Message {
-	mi := &file_field_proto_msgTypes[0]
+	mi := &file_dotjoshrc_oapi_v1_field_proto_msgTypes[0]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -93,7 +93,7 @@ func (x *FieldOptions) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use FieldOptions.ProtoReflect.Descriptor instead.
 func (*FieldOptions) Descriptor() ([]byte, []int) {
-	return file_field_proto_rawDescGZIP(), []int{0}
+	return file_dotjoshrc_oapi_v1_field_proto_rawDescGZIP(), []int{0}
 }
 
 func (x *FieldOptions) GetMin() float64 {
@@ -215,30 +215,30 @@ func (x *FieldOptions) GetAsType() string {
 	return ""
 }
 
-var file_field_proto_extTypes = []protoimpl.ExtensionInfo{
+var file_dotjoshrc_oapi_v1_field_proto_extTypes = []protoimpl.ExtensionInfo{
 	{
 		ExtendedType:  (*descriptorpb.FieldOptions)(nil),
 		ExtensionType: (*bool)(nil),
 		Field:         5150,
-		Name:          "oapi.v1.required",
+		Name:          "dotjoshrc.oapi.v1.required",
 		Tag:           "varint,5150,opt,name=required",
-		Filename:      "field.proto",
+		Filename:      "dotjoshrc/oapi/v1/field.proto",
 	},
 	{
 		ExtendedType:  (*descriptorpb.FieldOptions)(nil),
 		ExtensionType: (*string)(nil),
 		Field:         5151,
-		Name:          "oapi.v1.example",
+		Name:          "dotjoshrc.oapi.v1.example",
 		Tag:           "bytes,5151,opt,name=example",
-		Filename:      "field.proto",
+		Filename:      "dotjoshrc/oapi/v1/field.proto",
 	},
 	{
 		ExtendedType:  (*descriptorpb.FieldOptions)(nil),
 		ExtensionType: (*FieldOptions)(nil),
 		Field:         5152,
-		Name:          "oapi.v1.options",
+		Name:          "dotjoshrc.oapi.v1.options",
 		Tag:           "bytes,5152,opt,name=options",
-		Filename:      "field.proto",
+		Filename:      "dotjoshrc/oapi/v1/field.proto",
 	},
 }
 
@@ -247,23 +247,23 @@ var (
 	// Marks the field as required.
 	//
 	// optional bool required = 5150;
-	E_Required = &file_field_proto_extTypes[0]
+	E_Required = &file_dotjoshrc_oapi_v1_field_proto_extTypes[0]
 	// Value for the example on the field. This overrides any examples in
 	// comments.
 	//
 	// optional string example = 5151;
-	E_Example = &file_field_proto_extTypes[1]
+	E_Example = &file_dotjoshrc_oapi_v1_field_proto_extTypes[1]
 	// Options for a field.
 	//
-	// optional oapi.v1.FieldOptions options = 5152;
-	E_Options = &file_field_proto_extTypes[2]
+	// optional dotjoshrc.oapi.v1.FieldOptions options = 5152;
+	E_Options = &file_dotjoshrc_oapi_v1_field_proto_extTypes[2]
 )
 
-var File_field_proto protoreflect.FileDescriptor
+var File_dotjoshrc_oapi_v1_field_proto protoreflect.FileDescriptor
 
-const file_field_proto_rawDesc = "" +
+const file_dotjoshrc_oapi_v1_field_proto_rawDesc = "" +
 	"\n" +
-	"\vfield.proto\x12\aoapi.v1\x1a google/protobuf/descriptor.proto\"\xa4\x06\n" +
+	"\x1ddotjoshrc/oapi/v1/field.proto\x12\x11dotjoshrc.oapi.v1\x1a google/protobuf/descriptor.proto\"\xa4\x06\n" +
 	"\fFieldOptions\x12\x15\n" +
 	"\x03min\x18\x01 \x01(\x01H\x00R\x03min\x88\x01\x01\x12\x15\n" +
 	"\x03max\x18\x02 \x01(\x01H\x01R\x03max\x88\x01\x01\x12\"\n" +
@@ -307,33 +307,33 @@ const file_field_proto_rawDesc = "" +
 	"\n" +
 	"\b_as_type::\n" +
 	"\brequired\x12\x1d.google.protobuf.FieldOptions\x18\x9e( \x01(\bR\brequired:8\n" +
-	"\aexample\x12\x1d.google.protobuf.FieldOptions\x18\x9f( \x01(\tR\aexample:O\n" +
-	"\aoptions\x12\x1d.google.protobuf.FieldOptions\x18\xa0( \x01(\v2\x15.oapi.v1.FieldOptionsR\aoptionsB\x9e\x01\n" +
-	"\vcom.oapi.v1B\n" +
-	"FieldProtoP\x01ZFgithub.com/dotjoshrc/protoc-gen-openapi/internal/gen/go/oapi/v1;oapiv1\xa2\x02\x03OXX\xaa\x02\aOapi.V1\xca\x02\aOapi\\V1\xe2\x02\x13Oapi\\V1\\GPBMetadata\xea\x02\bOapi::V1b\x06proto3"
+	"\aexample\x12\x1d.google.protobuf.FieldOptions\x18\x9f( \x01(\tR\aexample:Y\n" +
+	"\aoptions\x12\x1d.google.protobuf.FieldOptions\x18\xa0( \x01(\v2\x1f.dotjoshrc.oapi.v1.FieldOptionsR\aoptionsB\xd2\x01\n" +
+	"\x15com.dotjoshrc.oapi.v1B\n" +
+	"FieldProtoP\x01ZGgithub.com/dotjoshrc/protoc-gen-openapi/gen/go/dotjoshrc/oapi/v1;oapiv1\xa2\x02\x03DOX\xaa\x02\x11Dotjoshrc.Oapi.V1\xca\x02\x11Dotjoshrc\\Oapi\\V1\xe2\x02\x1dDotjoshrc\\Oapi\\V1\\GPBMetadata\xea\x02\x13Dotjoshrc::Oapi::V1b\x06proto3"
 
 var (
-	file_field_proto_rawDescOnce sync.Once
-	file_field_proto_rawDescData []byte
+	file_dotjoshrc_oapi_v1_field_proto_rawDescOnce sync.Once
+	file_dotjoshrc_oapi_v1_field_proto_rawDescData []byte
 )
 
-func file_field_proto_rawDescGZIP() []byte {
-	file_field_proto_rawDescOnce.Do(func() {
-		file_field_proto_rawDescData = protoimpl.X.CompressGZIP(unsafe.Slice(unsafe.StringData(file_field_proto_rawDesc), len(file_field_proto_rawDesc)))
+func file_dotjoshrc_oapi_v1_field_proto_rawDescGZIP() []byte {
+	file_dotjoshrc_oapi_v1_field_proto_rawDescOnce.Do(func() {
+		file_dotjoshrc_oapi_v1_field_proto_rawDescData = protoimpl.X.CompressGZIP(unsafe.Slice(unsafe.StringData(file_dotjoshrc_oapi_v1_field_proto_rawDesc), len(file_dotjoshrc_oapi_v1_field_proto_rawDesc)))
 	})
-	return file_field_proto_rawDescData
+	return file_dotjoshrc_oapi_v1_field_proto_rawDescData
 }
 
-var file_field_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
-var file_field_proto_goTypes = []any{
-	(*FieldOptions)(nil),              // 0: oapi.v1.FieldOptions
+var file_dotjoshrc_oapi_v1_field_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
+var file_dotjoshrc_oapi_v1_field_proto_goTypes = []any{
+	(*FieldOptions)(nil),              // 0: dotjoshrc.oapi.v1.FieldOptions
 	(*descriptorpb.FieldOptions)(nil), // 1: google.protobuf.FieldOptions
 }
-var file_field_proto_depIdxs = []int32{
-	1, // 0: oapi.v1.required:extendee -> google.protobuf.FieldOptions
-	1, // 1: oapi.v1.example:extendee -> google.protobuf.FieldOptions
-	1, // 2: oapi.v1.options:extendee -> google.protobuf.FieldOptions
-	0, // 3: oapi.v1.options:type_name -> oapi.v1.FieldOptions
+var file_dotjoshrc_oapi_v1_field_proto_depIdxs = []int32{
+	1, // 0: dotjoshrc.oapi.v1.required:extendee -> google.protobuf.FieldOptions
+	1, // 1: dotjoshrc.oapi.v1.example:extendee -> google.protobuf.FieldOptions
+	1, // 2: dotjoshrc.oapi.v1.options:extendee -> google.protobuf.FieldOptions
+	0, // 3: dotjoshrc.oapi.v1.options:type_name -> dotjoshrc.oapi.v1.FieldOptions
 	4, // [4:4] is the sub-list for method output_type
 	4, // [4:4] is the sub-list for method input_type
 	3, // [3:4] is the sub-list for extension type_name
@@ -341,28 +341,28 @@ var file_field_proto_depIdxs = []int32{
 	0, // [0:0] is the sub-list for field type_name
 }
 
-func init() { file_field_proto_init() }
-func file_field_proto_init() {
-	if File_field_proto != nil {
+func init() { file_dotjoshrc_oapi_v1_field_proto_init() }
+func file_dotjoshrc_oapi_v1_field_proto_init() {
+	if File_dotjoshrc_oapi_v1_field_proto != nil {
 		return
 	}
-	file_field_proto_msgTypes[0].OneofWrappers = []any{}
+	file_dotjoshrc_oapi_v1_field_proto_msgTypes[0].OneofWrappers = []any{}
 	type x struct{}
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: unsafe.Slice(unsafe.StringData(file_field_proto_rawDesc), len(file_field_proto_rawDesc)),
+			RawDescriptor: unsafe.Slice(unsafe.StringData(file_dotjoshrc_oapi_v1_field_proto_rawDesc), len(file_dotjoshrc_oapi_v1_field_proto_rawDesc)),
 			NumEnums:      0,
 			NumMessages:   1,
 			NumExtensions: 3,
 			NumServices:   0,
 		},
-		GoTypes:           file_field_proto_goTypes,
-		DependencyIndexes: file_field_proto_depIdxs,
-		MessageInfos:      file_field_proto_msgTypes,
-		ExtensionInfos:    file_field_proto_extTypes,
+		GoTypes:           file_dotjoshrc_oapi_v1_field_proto_goTypes,
+		DependencyIndexes: file_dotjoshrc_oapi_v1_field_proto_depIdxs,
+		MessageInfos:      file_dotjoshrc_oapi_v1_field_proto_msgTypes,
+		ExtensionInfos:    file_dotjoshrc_oapi_v1_field_proto_extTypes,
 	}.Build()
-	File_field_proto = out.File
-	file_field_proto_goTypes = nil
-	file_field_proto_depIdxs = nil
+	File_dotjoshrc_oapi_v1_field_proto = out.File
+	file_dotjoshrc_oapi_v1_field_proto_goTypes = nil
+	file_dotjoshrc_oapi_v1_field_proto_depIdxs = nil
 }

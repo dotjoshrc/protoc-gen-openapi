@@ -2,10 +2,10 @@ syntax = "proto3";
 
 package test.api;
 
-import "oapi/v1/file.proto";
+import "dotjoshrc/oapi/v1/file.proto";
 
 option go_package = "github.com/dotjoshrc/protoc-gen-openapi/test/api";
-option (oapi.v1.file) = {
+option (dotjoshrc.oapi.v1.file) = {
   host: "swagger.io"
 
   servers: [

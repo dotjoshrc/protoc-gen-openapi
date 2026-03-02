@@ -1,13 +1,13 @@
 syntax = "proto3";
 
-package oapi.v1;
+package dotjoshrc.oapi.v1;
 
+import "dotjoshrc/oapi/v1/parameter.proto";
+import "dotjoshrc/oapi/v1/security.proto";
+import "dotjoshrc/oapi/v1/server.proto";
 import "google/protobuf/descriptor.proto";
-import "parameter.proto";
-import "security.proto";
-import "server.proto";
 
-option go_package = "github.com/dotjoshrc/protoc-gen-openapi/internal/gen/go/oapi/v1;oapiv1";
+option go_package = "github.com/dotjoshrc/protoc-gen-openapi/gen/go/dotjoshrc/oapi/v1;oapiv1";
 
 extend google.protobuf.ServiceOptions {
   ServiceOptions service = 5150;

@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package dotjoshrc.oapi.v1;
+
+option go_package = "github.com/dotjoshrc/protoc-gen-openapi/gen/go/dotjoshrc/oapi/v1;oapiv1";
+
+message Server {
+  // The URL of the server to be used.
+  string url = 1;
+}

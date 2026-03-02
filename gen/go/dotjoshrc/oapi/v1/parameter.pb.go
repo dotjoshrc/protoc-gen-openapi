@@ -2,7 +2,7 @@
 // versions:
 // 	protoc-gen-go v1.36.11
 // 	protoc        (unknown)
-// source: parameter.proto
+// source: dotjoshrc/oapi/v1/parameter.proto
 
 package oapiv1
 
@@ -60,11 +60,11 @@ func (x Parameter_Type) String() string {
 }
 
 func (Parameter_Type) Descriptor() protoreflect.EnumDescriptor {
-	return file_parameter_proto_enumTypes[0].Descriptor()
+	return file_dotjoshrc_oapi_v1_parameter_proto_enumTypes[0].Descriptor()
 }
 
 func (Parameter_Type) Type() protoreflect.EnumType {
-	return &file_parameter_proto_enumTypes[0]
+	return &file_dotjoshrc_oapi_v1_parameter_proto_enumTypes[0]
 }
 
 func (x Parameter_Type) Number() protoreflect.EnumNumber {
@@ -73,7 +73,7 @@ func (x Parameter_Type) Number() protoreflect.EnumNumber {
 
 // Deprecated: Use Parameter_Type.Descriptor instead.
 func (Parameter_Type) EnumDescriptor() ([]byte, []int) {
-	return file_parameter_proto_rawDescGZIP(), []int{0, 0}
+	return file_dotjoshrc_oapi_v1_parameter_proto_rawDescGZIP(), []int{0, 0}
 }
 
 type Parameter struct {
@@ -84,7 +84,7 @@ type Parameter struct {
 	// query should.
 	Name string `protobuf:"bytes,1,opt,name=name,proto3" json:"name,omitempty"`
 	// Type of the parameter.
-	Type Parameter_Type `protobuf:"varint,2,opt,name=type,proto3,enum=oapi.v1.Parameter_Type" json:"type,omitempty"`
+	Type Parameter_Type `protobuf:"varint,2,opt,name=type,proto3,enum=dotjoshrc.oapi.v1.Parameter_Type" json:"type,omitempty"`
 	// Value for the example of the parameter.
 	Example string `protobuf:"bytes,3,opt,name=example,proto3" json:"example,omitempty"`
 	// Description of the parameter.
@@ -99,7 +99,7 @@ type Parameter struct {
 
 func (x *Parameter) Reset() {
 	*x = Parameter{}
-	mi := &file_parameter_proto_msgTypes[0]
+	mi := &file_dotjoshrc_oapi_v1_parameter_proto_msgTypes[0]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -111,7 +111,7 @@ func (x *Parameter) String() string {
 func (*Parameter) ProtoMessage() {}
 
 func (x *Parameter) ProtoReflect() protoreflect.Message {
-	mi := &file_parameter_proto_msgTypes[0]
+	mi := &file_dotjoshrc_oapi_v1_parameter_proto_msgTypes[0]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -124,7 +124,7 @@ func (x *Parameter) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use Parameter.ProtoReflect.Descriptor instead.
 func (*Parameter) Descriptor() ([]byte, []int) {
-	return file_parameter_proto_rawDescGZIP(), []int{0}
+	return file_dotjoshrc_oapi_v1_parameter_proto_rawDescGZIP(), []int{0}
 }
 
 func (x *Parameter) GetName() string {
@@ -169,17 +169,17 @@ func (x *Parameter) GetRequired() bool {
 	return false
 }
 
-var File_parameter_proto protoreflect.FileDescriptor
+var File_dotjoshrc_oapi_v1_parameter_proto protoreflect.FileDescriptor
 
-const file_parameter_proto_rawDesc = "" +
+const file_dotjoshrc_oapi_v1_parameter_proto_rawDesc = "" +
 	"\n" +
-	"\x0fparameter.proto\x12\aoapi.v1\x1a\vfield.proto\"\xcb\x02\n" +
+	"!dotjoshrc/oapi/v1/parameter.proto\x12\x11dotjoshrc.oapi.v1\x1a\x1ddotjoshrc/oapi/v1/field.proto\"\xdf\x02\n" +
 	"\tParameter\x12\x12\n" +
-	"\x04name\x18\x01 \x01(\tR\x04name\x12+\n" +
-	"\x04type\x18\x02 \x01(\x0e2\x17.oapi.v1.Parameter.TypeR\x04type\x12\x18\n" +
+	"\x04name\x18\x01 \x01(\tR\x04name\x125\n" +
+	"\x04type\x18\x02 \x01(\x0e2!.dotjoshrc.oapi.v1.Parameter.TypeR\x04type\x12\x18\n" +
 	"\aexample\x18\x03 \x01(\tR\aexample\x12 \n" +
-	"\vdescription\x18\x04 \x01(\tR\vdescription\x12/\n" +
-	"\aoptions\x18\x05 \x01(\v2\x15.oapi.v1.FieldOptionsR\aoptions\x12\x1f\n" +
+	"\vdescription\x18\x04 \x01(\tR\vdescription\x129\n" +
+	"\aoptions\x18\x05 \x01(\v2\x1f.dotjoshrc.oapi.v1.FieldOptionsR\aoptions\x12\x1f\n" +
 	"\brequired\x18\x06 \x01(\bH\x00R\brequired\x88\x01\x01\"b\n" +
 	"\x04Type\x12\x14\n" +
 	"\x10TYPE_UNSPECIFIED\x10\x00\x12\x0f\n" +
@@ -187,31 +187,31 @@ const file_parameter_proto_rawDesc = "" +
 	"\vTYPE_NUMBER\x10\x02\x12\x10\n" +
 	"\fTYPE_INTEGER\x10\x03\x12\x10\n" +
 	"\fTYPE_BOOLEAN\x10\x04B\v\n" +
-	"\t_requiredB\xa2\x01\n" +
-	"\vcom.oapi.v1B\x0eParameterProtoP\x01ZFgithub.com/dotjoshrc/protoc-gen-openapi/internal/gen/go/oapi/v1;oapiv1\xa2\x02\x03OXX\xaa\x02\aOapi.V1\xca\x02\aOapi\\V1\xe2\x02\x13Oapi\\V1\\GPBMetadata\xea\x02\bOapi::V1b\x06proto3"
+	"\t_requiredB\xd6\x01\n" +
+	"\x15com.dotjoshrc.oapi.v1B\x0eParameterProtoP\x01ZGgithub.com/dotjoshrc/protoc-gen-openapi/gen/go/dotjoshrc/oapi/v1;oapiv1\xa2\x02\x03DOX\xaa\x02\x11Dotjoshrc.Oapi.V1\xca\x02\x11Dotjoshrc\\Oapi\\V1\xe2\x02\x1dDotjoshrc\\Oapi\\V1\\GPBMetadata\xea\x02\x13Dotjoshrc::Oapi::V1b\x06proto3"
 
 var (
-	file_parameter_proto_rawDescOnce sync.Once
-	file_parameter_proto_rawDescData []byte
+	file_dotjoshrc_oapi_v1_parameter_proto_rawDescOnce sync.Once
+	file_dotjoshrc_oapi_v1_parameter_proto_rawDescData []byte
 )
 
-func file_parameter_proto_rawDescGZIP() []byte {
-	file_parameter_proto_rawDescOnce.Do(func() {
-		file_parameter_proto_rawDescData = protoimpl.X.CompressGZIP(unsafe.Slice(unsafe.StringData(file_parameter_proto_rawDesc), len(file_parameter_proto_rawDesc)))
+func file_dotjoshrc_oapi_v1_parameter_proto_rawDescGZIP() []byte {
+	file_dotjoshrc_oapi_v1_parameter_proto_rawDescOnce.Do(func() {
+		file_dotjoshrc_oapi_v1_parameter_proto_rawDescData = protoimpl.X.CompressGZIP(unsafe.Slice(unsafe.StringData(file_dotjoshrc_oapi_v1_parameter_proto_rawDesc), len(file_dotjoshrc_oapi_v1_parameter_proto_rawDesc)))
 	})
-	return file_parameter_proto_rawDescData
+	return file_dotjoshrc_oapi_v1_parameter_proto_rawDescData
 }
 
-var file_parameter_proto_enumTypes = make([]protoimpl.EnumInfo, 1)
-var file_parameter_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
-var file_parameter_proto_goTypes = []any{
-	(Parameter_Type)(0),  // 0: oapi.v1.Parameter.Type
-	(*Parameter)(nil),    // 1: oapi.v1.Parameter
-	(*FieldOptions)(nil), // 2: oapi.v1.FieldOptions
+var file_dotjoshrc_oapi_v1_parameter_proto_enumTypes = make([]protoimpl.EnumInfo, 1)
+var file_dotjoshrc_oapi_v1_parameter_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
+var file_dotjoshrc_oapi_v1_parameter_proto_goTypes = []any{
+	(Parameter_Type)(0),  // 0: dotjoshrc.oapi.v1.Parameter.Type
+	(*Parameter)(nil),    // 1: dotjoshrc.oapi.v1.Parameter
+	(*FieldOptions)(nil), // 2: dotjoshrc.oapi.v1.FieldOptions
 }
-var file_parameter_proto_depIdxs = []int32{
-	0, // 0: oapi.v1.Parameter.type:type_name -> oapi.v1.Parameter.Type
-	2, // 1: oapi.v1.Parameter.options:type_name -> oapi.v1.FieldOptions
+var file_dotjoshrc_oapi_v1_parameter_proto_depIdxs = []int32{
+	0, // 0: dotjoshrc.oapi.v1.Parameter.type:type_name -> dotjoshrc.oapi.v1.Parameter.Type
+	2, // 1: dotjoshrc.oapi.v1.Parameter.options:type_name -> dotjoshrc.oapi.v1.FieldOptions
 	2, // [2:2] is the sub-list for method output_type
 	2, // [2:2] is the sub-list for method input_type
 	2, // [2:2] is the sub-list for extension type_name
@@ -219,29 +219,29 @@ var file_parameter_proto_depIdxs = []int32{
 	0, // [0:2] is the sub-list for field type_name
 }
 
-func init() { file_parameter_proto_init() }
-func file_parameter_proto_init() {
-	if File_parameter_proto != nil {
+func init() { file_dotjoshrc_oapi_v1_parameter_proto_init() }
+func file_dotjoshrc_oapi_v1_parameter_proto_init() {
+	if File_dotjoshrc_oapi_v1_parameter_proto != nil {
 		return
 	}
-	file_field_proto_init()
-	file_parameter_proto_msgTypes[0].OneofWrappers = []any{}
+	file_dotjoshrc_oapi_v1_field_proto_init()
+	file_dotjoshrc_oapi_v1_parameter_proto_msgTypes[0].OneofWrappers = []any{}
 	type x struct{}
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: unsafe.Slice(unsafe.StringData(file_parameter_proto_rawDesc), len(file_parameter_proto_rawDesc)),
+			RawDescriptor: unsafe.Slice(unsafe.StringData(file_dotjoshrc_oapi_v1_parameter_proto_rawDesc), len(file_dotjoshrc_oapi_v1_parameter_proto_rawDesc)),
 			NumEnums:      1,
 			NumMessages:   1,
 			NumExtensions: 0,
 			NumServices:   0,
 		},
-		GoTypes:           file_parameter_proto_goTypes,
-		DependencyIndexes: file_parameter_proto_depIdxs,
-		EnumInfos:         file_parameter_proto_enumTypes,
-		MessageInfos:      file_parameter_proto_msgTypes,
+		GoTypes:           file_dotjoshrc_oapi_v1_parameter_proto_goTypes,
+		DependencyIndexes: file_dotjoshrc_oapi_v1_parameter_proto_depIdxs,
+		EnumInfos:         file_dotjoshrc_oapi_v1_parameter_proto_enumTypes,
+		MessageInfos:      file_dotjoshrc_oapi_v1_parameter_proto_msgTypes,
 	}.Build()
-	File_parameter_proto = out.File
-	file_parameter_proto_goTypes = nil
-	file_parameter_proto_depIdxs = nil
+	File_dotjoshrc_oapi_v1_parameter_proto = out.File
+	file_dotjoshrc_oapi_v1_parameter_proto_goTypes = nil
+	file_dotjoshrc_oapi_v1_parameter_proto_depIdxs = nil
 }

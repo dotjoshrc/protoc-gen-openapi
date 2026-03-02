@@ -2,7 +2,7 @@
 // versions:
 // 	protoc-gen-go v1.36.11
 // 	protoc        (unknown)
-// source: file.proto
+// source: dotjoshrc/oapi/v1/file.proto
 
 package oapiv1
 
@@ -27,7 +27,7 @@ type FileOptions struct {
 	// The default host for all services and methods defined in a file. This can
 	// be overridden by the service or a method definition.
 	//
-	// Deprecated: Marked as deprecated in file.proto.
+	// Deprecated: Marked as deprecated in dotjoshrc/oapi/v1/file.proto.
 	Host string `protobuf:"bytes,1,opt,name=host,proto3" json:"host,omitempty"`
 	// The default prefix for all services and methods in a file. This can be
 	// overridden by the service or a method definition.
@@ -46,7 +46,7 @@ type FileOptions struct {
 
 func (x *FileOptions) Reset() {
 	*x = FileOptions{}
-	mi := &file_file_proto_msgTypes[0]
+	mi := &file_dotjoshrc_oapi_v1_file_proto_msgTypes[0]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -58,7 +58,7 @@ func (x *FileOptions) String() string {
 func (*FileOptions) ProtoMessage() {}
 
 func (x *FileOptions) ProtoReflect() protoreflect.Message {
-	mi := &file_file_proto_msgTypes[0]
+	mi := &file_dotjoshrc_oapi_v1_file_proto_msgTypes[0]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -71,10 +71,10 @@ func (x *FileOptions) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use FileOptions.ProtoReflect.Descriptor instead.
 func (*FileOptions) Descriptor() ([]byte, []int) {
-	return file_file_proto_rawDescGZIP(), []int{0}
+	return file_dotjoshrc_oapi_v1_file_proto_rawDescGZIP(), []int{0}
 }
 
-// Deprecated: Marked as deprecated in file.proto.
+// Deprecated: Marked as deprecated in dotjoshrc/oapi/v1/file.proto.
 func (x *FileOptions) GetHost() string {
 	if x != nil {
 		return x.Host
@@ -110,64 +110,63 @@ func (x *FileOptions) GetServers() []*Server {
 	return nil
 }
 
-var file_file_proto_extTypes = []protoimpl.ExtensionInfo{
+var file_dotjoshrc_oapi_v1_file_proto_extTypes = []protoimpl.ExtensionInfo{
 	{
 		ExtendedType:  (*descriptorpb.FileOptions)(nil),
 		ExtensionType: (*FileOptions)(nil),
 		Field:         5150,
-		Name:          "oapi.v1.file",
+		Name:          "dotjoshrc.oapi.v1.file",
 		Tag:           "bytes,5150,opt,name=file",
-		Filename:      "file.proto",
+		Filename:      "dotjoshrc/oapi/v1/file.proto",
 	},
 }
 
 // Extension fields to descriptorpb.FileOptions.
 var (
-	// optional oapi.v1.FileOptions file = 5150;
-	E_File = &file_file_proto_extTypes[0]
+	// optional dotjoshrc.oapi.v1.FileOptions file = 5150;
+	E_File = &file_dotjoshrc_oapi_v1_file_proto_extTypes[0]
 )
 
-var File_file_proto protoreflect.FileDescriptor
+var File_dotjoshrc_oapi_v1_file_proto protoreflect.FileDescriptor
 
-const file_file_proto_rawDesc = "" +
+const file_dotjoshrc_oapi_v1_file_proto_rawDesc = "" +
 	"\n" +
-	"\n" +
-	"file.proto\x12\aoapi.v1\x1a google/protobuf/descriptor.proto\x1a\x0esecurity.proto\x1a\fserver.proto\"\xdb\x01\n" +
+	"\x1cdotjoshrc/oapi/v1/file.proto\x12\x11dotjoshrc.oapi.v1\x1a dotjoshrc/oapi/v1/security.proto\x1a\x1edotjoshrc/oapi/v1/server.proto\x1a google/protobuf/descriptor.proto\"\xf9\x01\n" +
 	"\vFileOptions\x12\x16\n" +
 	"\x04host\x18\x01 \x01(\tB\x02\x18\x01R\x04host\x12\x16\n" +
-	"\x06prefix\x18\x02 \x01(\tR\x06prefix\x12B\n" +
-	"\x10security_schemes\x18\x03 \x03(\v2\x17.oapi.v1.SecuritySchemeR\x0fsecuritySchemes\x12-\n" +
-	"\bsecurity\x18\x04 \x03(\v2\x11.oapi.v1.SecurityR\bsecurity\x12)\n" +
-	"\aservers\x18\x05 \x03(\v2\x0f.oapi.v1.ServerR\aservers:G\n" +
-	"\x04file\x12\x1c.google.protobuf.FileOptions\x18\x9e( \x01(\v2\x14.oapi.v1.FileOptionsR\x04fileB\x9d\x01\n" +
-	"\vcom.oapi.v1B\tFileProtoP\x01ZFgithub.com/dotjoshrc/protoc-gen-openapi/internal/gen/go/oapi/v1;oapiv1\xa2\x02\x03OXX\xaa\x02\aOapi.V1\xca\x02\aOapi\\V1\xe2\x02\x13Oapi\\V1\\GPBMetadata\xea\x02\bOapi::V1b\x06proto3"
+	"\x06prefix\x18\x02 \x01(\tR\x06prefix\x12L\n" +
+	"\x10security_schemes\x18\x03 \x03(\v2!.dotjoshrc.oapi.v1.SecuritySchemeR\x0fsecuritySchemes\x127\n" +
+	"\bsecurity\x18\x04 \x03(\v2\x1b.dotjoshrc.oapi.v1.SecurityR\bsecurity\x123\n" +
+	"\aservers\x18\x05 \x03(\v2\x19.dotjoshrc.oapi.v1.ServerR\aservers:Q\n" +
+	"\x04file\x12\x1c.google.protobuf.FileOptions\x18\x9e( \x01(\v2\x1e.dotjoshrc.oapi.v1.FileOptionsR\x04fileB\xd1\x01\n" +
+	"\x15com.dotjoshrc.oapi.v1B\tFileProtoP\x01ZGgithub.com/dotjoshrc/protoc-gen-openapi/gen/go/dotjoshrc/oapi/v1;oapiv1\xa2\x02\x03DOX\xaa\x02\x11Dotjoshrc.Oapi.V1\xca\x02\x11Dotjoshrc\\Oapi\\V1\xe2\x02\x1dDotjoshrc\\Oapi\\V1\\GPBMetadata\xea\x02\x13Dotjoshrc::Oapi::V1b\x06proto3"
 
 var (
-	file_file_proto_rawDescOnce sync.Once
-	file_file_proto_rawDescData []byte
+	file_dotjoshrc_oapi_v1_file_proto_rawDescOnce sync.Once
+	file_dotjoshrc_oapi_v1_file_proto_rawDescData []byte
 )
 
-func file_file_proto_rawDescGZIP() []byte {
-	file_file_proto_rawDescOnce.Do(func() {
-		file_file_proto_rawDescData = protoimpl.X.CompressGZIP(unsafe.Slice(unsafe.StringData(file_file_proto_rawDesc), len(file_file_proto_rawDesc)))
+func file_dotjoshrc_oapi_v1_file_proto_rawDescGZIP() []byte {
+	file_dotjoshrc_oapi_v1_file_proto_rawDescOnce.Do(func() {
+		file_dotjoshrc_oapi_v1_file_proto_rawDescData = protoimpl.X.CompressGZIP(unsafe.Slice(unsafe.StringData(file_dotjoshrc_oapi_v1_file_proto_rawDesc), len(file_dotjoshrc_oapi_v1_file_proto_rawDesc)))
 	})
-	return file_file_proto_rawDescData
+	return file_dotjoshrc_oapi_v1_file_proto_rawDescData
 }
 
-var file_file_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
-var file_file_proto_goTypes = []any{
-	(*FileOptions)(nil),              // 0: oapi.v1.FileOptions
-	(*SecurityScheme)(nil),           // 1: oapi.v1.SecurityScheme
-	(*Security)(nil),                 // 2: oapi.v1.Security
-	(*Server)(nil),                   // 3: oapi.v1.Server
+var file_dotjoshrc_oapi_v1_file_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
+var file_dotjoshrc_oapi_v1_file_proto_goTypes = []any{
+	(*FileOptions)(nil),              // 0: dotjoshrc.oapi.v1.FileOptions
+	(*SecurityScheme)(nil),           // 1: dotjoshrc.oapi.v1.SecurityScheme
+	(*Security)(nil),                 // 2: dotjoshrc.oapi.v1.Security
+	(*Server)(nil),                   // 3: dotjoshrc.oapi.v1.Server
 	(*descriptorpb.FileOptions)(nil), // 4: google.protobuf.FileOptions
 }
-var file_file_proto_depIdxs = []int32{
-	1, // 0: oapi.v1.FileOptions.security_schemes:type_name -> oapi.v1.SecurityScheme
-	2, // 1: oapi.v1.FileOptions.security:type_name -> oapi.v1.Security
-	3, // 2: oapi.v1.FileOptions.servers:type_name -> oapi.v1.Server
-	4, // 3: oapi.v1.file:extendee -> google.protobuf.FileOptions
-	0, // 4: oapi.v1.file:type_name -> oapi.v1.FileOptions
+var file_dotjoshrc_oapi_v1_file_proto_depIdxs = []int32{
+	1, // 0: dotjoshrc.oapi.v1.FileOptions.security_schemes:type_name -> dotjoshrc.oapi.v1.SecurityScheme
+	2, // 1: dotjoshrc.oapi.v1.FileOptions.security:type_name -> dotjoshrc.oapi.v1.Security
+	3, // 2: dotjoshrc.oapi.v1.FileOptions.servers:type_name -> dotjoshrc.oapi.v1.Server
+	4, // 3: dotjoshrc.oapi.v1.file:extendee -> google.protobuf.FileOptions
+	0, // 4: dotjoshrc.oapi.v1.file:type_name -> dotjoshrc.oapi.v1.FileOptions
 	5, // [5:5] is the sub-list for method output_type
 	5, // [5:5] is the sub-list for method input_type
 	4, // [4:5] is the sub-list for extension type_name
@@ -175,29 +174,29 @@ var file_file_proto_depIdxs = []int32{
 	0, // [0:3] is the sub-list for field type_name
 }
 
-func init() { file_file_proto_init() }
-func file_file_proto_init() {
-	if File_file_proto != nil {
+func init() { file_dotjoshrc_oapi_v1_file_proto_init() }
+func file_dotjoshrc_oapi_v1_file_proto_init() {
+	if File_dotjoshrc_oapi_v1_file_proto != nil {
 		return
 	}
-	file_security_proto_init()
-	file_server_proto_init()
+	file_dotjoshrc_oapi_v1_security_proto_init()
+	file_dotjoshrc_oapi_v1_server_proto_init()
 	type x struct{}
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: unsafe.Slice(unsafe.StringData(file_file_proto_rawDesc), len(file_file_proto_rawDesc)),
+			RawDescriptor: unsafe.Slice(unsafe.StringData(file_dotjoshrc_oapi_v1_file_proto_rawDesc), len(file_dotjoshrc_oapi_v1_file_proto_rawDesc)),
 			NumEnums:      0,
 			NumMessages:   1,
 			NumExtensions: 1,
 			NumServices:   0,
 		},
-		GoTypes:           file_file_proto_goTypes,
-		DependencyIndexes: file_file_proto_depIdxs,
-		MessageInfos:      file_file_proto_msgTypes,
-		ExtensionInfos:    file_file_proto_extTypes,
+		GoTypes:           file_dotjoshrc_oapi_v1_file_proto_goTypes,
+		DependencyIndexes: file_dotjoshrc_oapi_v1_file_proto_depIdxs,
+		MessageInfos:      file_dotjoshrc_oapi_v1_file_proto_msgTypes,
+		ExtensionInfos:    file_dotjoshrc_oapi_v1_file_proto_extTypes,
 	}.Build()
-	File_file_proto = out.File
-	file_file_proto_goTypes = nil
-	file_file_proto_depIdxs = nil
+	File_dotjoshrc_oapi_v1_file_proto = out.File
+	file_dotjoshrc_oapi_v1_file_proto_goTypes = nil
+	file_dotjoshrc_oapi_v1_file_proto_depIdxs = nil
 }

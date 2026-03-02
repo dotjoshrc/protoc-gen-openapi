@@ -100,7 +100,7 @@ func (s *TestSuite) BeforeTest(_, name string) {
 	}
 
 	out, err := exec.Command("protoc",
-		"-I=api",
+		"-I=proto/openapi",
 		"-I=test",
 		"--openapi_out=test",
 		"--openapi_opt=version="+s.options.version,

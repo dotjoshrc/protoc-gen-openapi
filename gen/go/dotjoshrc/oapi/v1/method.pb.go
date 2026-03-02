@@ -2,7 +2,7 @@
 // versions:
 // 	protoc-gen-go v1.36.11
 // 	protoc        (unknown)
-// source: method.proto
+// source: dotjoshrc/oapi/v1/method.proto
 
 package oapiv1
 
@@ -37,7 +37,7 @@ type MethodOptions struct {
 	// The host to use for the current method. This overrides any higher defined
 	// default_host value.
 	//
-	// Deprecated: Marked as deprecated in method.proto.
+	// Deprecated: Marked as deprecated in dotjoshrc/oapi/v1/method.proto.
 	Host string `protobuf:"bytes,6,opt,name=host,proto3" json:"host,omitempty"`
 	// Specified content type for the method.
 	ContentType string `protobuf:"bytes,7,opt,name=content_type,json=contentType,proto3" json:"content_type,omitempty"`
@@ -71,7 +71,7 @@ type MethodOptions struct {
 
 func (x *MethodOptions) Reset() {
 	*x = MethodOptions{}
-	mi := &file_method_proto_msgTypes[0]
+	mi := &file_dotjoshrc_oapi_v1_method_proto_msgTypes[0]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -83,7 +83,7 @@ func (x *MethodOptions) String() string {
 func (*MethodOptions) ProtoMessage() {}
 
 func (x *MethodOptions) ProtoReflect() protoreflect.Message {
-	mi := &file_method_proto_msgTypes[0]
+	mi := &file_dotjoshrc_oapi_v1_method_proto_msgTypes[0]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -96,7 +96,7 @@ func (x *MethodOptions) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MethodOptions.ProtoReflect.Descriptor instead.
 func (*MethodOptions) Descriptor() ([]byte, []int) {
-	return file_method_proto_rawDescGZIP(), []int{0}
+	return file_dotjoshrc_oapi_v1_method_proto_rawDescGZIP(), []int{0}
 }
 
 func (x *MethodOptions) GetMethod() isMethodOptions_Method {
@@ -151,7 +151,7 @@ func (x *MethodOptions) GetPatch() string {
 	return ""
 }
 
-// Deprecated: Marked as deprecated in method.proto.
+// Deprecated: Marked as deprecated in dotjoshrc/oapi/v1/method.proto.
 func (x *MethodOptions) GetHost() string {
 	if x != nil {
 		return x.Host
@@ -282,28 +282,28 @@ func (*MethodOptions_Delete) isMethodOptions_Method() {}
 
 func (*MethodOptions_Patch) isMethodOptions_Method() {}
 
-var file_method_proto_extTypes = []protoimpl.ExtensionInfo{
+var file_dotjoshrc_oapi_v1_method_proto_extTypes = []protoimpl.ExtensionInfo{
 	{
 		ExtendedType:  (*descriptorpb.MethodOptions)(nil),
 		ExtensionType: (*MethodOptions)(nil),
 		Field:         5150,
-		Name:          "oapi.v1.method",
+		Name:          "dotjoshrc.oapi.v1.method",
 		Tag:           "bytes,5150,opt,name=method",
-		Filename:      "method.proto",
+		Filename:      "dotjoshrc/oapi/v1/method.proto",
 	},
 }
 
 // Extension fields to descriptorpb.MethodOptions.
 var (
-	// optional oapi.v1.MethodOptions method = 5150;
-	E_Method = &file_method_proto_extTypes[0]
+	// optional dotjoshrc.oapi.v1.MethodOptions method = 5150;
+	E_Method = &file_dotjoshrc_oapi_v1_method_proto_extTypes[0]
 )
 
-var File_method_proto protoreflect.FileDescriptor
+var File_dotjoshrc_oapi_v1_method_proto protoreflect.FileDescriptor
 
-const file_method_proto_rawDesc = "" +
+const file_dotjoshrc_oapi_v1_method_proto_rawDesc = "" +
 	"\n" +
-	"\fmethod.proto\x12\aoapi.v1\x1a google/protobuf/descriptor.proto\x1a\x0fparameter.proto\x1a\x0esecurity.proto\x1a\fserver.proto\"\xc3\x05\n" +
+	"\x1edotjoshrc/oapi/v1/method.proto\x12\x11dotjoshrc.oapi.v1\x1a!dotjoshrc/oapi/v1/parameter.proto\x1a dotjoshrc/oapi/v1/security.proto\x1a\x1edotjoshrc/oapi/v1/server.proto\x1a google/protobuf/descriptor.proto\"\x89\x06\n" +
 	"\rMethodOptions\x12\x12\n" +
 	"\x03get\x18\x01 \x01(\tH\x00R\x03get\x12\x12\n" +
 	"\x03put\x18\x02 \x01(\tH\x00R\x03put\x12\x14\n" +
@@ -318,49 +318,49 @@ const file_method_proto_rawDesc = "" +
 	"deprecated\x18\n" +
 	" \x01(\bR\n" +
 	"deprecated\x12\x18\n" +
-	"\asummary\x18\v \x01(\tR\asummary\x129\n" +
-	"\x0epath_parameter\x18\f \x03(\v2\x12.oapi.v1.ParameterR\rpathParameter\x12;\n" +
-	"\x0fquery_parameter\x18\r \x03(\v2\x12.oapi.v1.ParameterR\x0equeryParameter\x12=\n" +
-	"\x10header_parameter\x18\x0e \x03(\v2\x12.oapi.v1.ParameterR\x0fheaderParameter\x12=\n" +
-	"\x10cookie_parameter\x18\x0f \x03(\v2\x12.oapi.v1.ParameterR\x0fcookieParameter\x12-\n" +
-	"\bsecurity\x18\x10 \x03(\v2\x11.oapi.v1.SecurityR\bsecurity\x12)\n" +
-	"\aservers\x18\x11 \x03(\v2\x0f.oapi.v1.ServerR\aservers\x120\n" +
-	"\vadd_servers\x18\x12 \x03(\v2\x0f.oapi.v1.ServerR\n" +
+	"\asummary\x18\v \x01(\tR\asummary\x12C\n" +
+	"\x0epath_parameter\x18\f \x03(\v2\x1c.dotjoshrc.oapi.v1.ParameterR\rpathParameter\x12E\n" +
+	"\x0fquery_parameter\x18\r \x03(\v2\x1c.dotjoshrc.oapi.v1.ParameterR\x0equeryParameter\x12G\n" +
+	"\x10header_parameter\x18\x0e \x03(\v2\x1c.dotjoshrc.oapi.v1.ParameterR\x0fheaderParameter\x12G\n" +
+	"\x10cookie_parameter\x18\x0f \x03(\v2\x1c.dotjoshrc.oapi.v1.ParameterR\x0fcookieParameter\x127\n" +
+	"\bsecurity\x18\x10 \x03(\v2\x1b.dotjoshrc.oapi.v1.SecurityR\bsecurity\x123\n" +
+	"\aservers\x18\x11 \x03(\v2\x19.dotjoshrc.oapi.v1.ServerR\aservers\x12:\n" +
+	"\vadd_servers\x18\x12 \x03(\v2\x19.dotjoshrc.oapi.v1.ServerR\n" +
 	"addServersB\b\n" +
-	"\x06method:O\n" +
-	"\x06method\x12\x1e.google.protobuf.MethodOptions\x18\x9e( \x01(\v2\x16.oapi.v1.MethodOptionsR\x06methodB\x9f\x01\n" +
-	"\vcom.oapi.v1B\vMethodProtoP\x01ZFgithub.com/dotjoshrc/protoc-gen-openapi/internal/gen/go/oapi/v1;oapiv1\xa2\x02\x03OXX\xaa\x02\aOapi.V1\xca\x02\aOapi\\V1\xe2\x02\x13Oapi\\V1\\GPBMetadata\xea\x02\bOapi::V1b\x06proto3"
+	"\x06method:Y\n" +
+	"\x06method\x12\x1e.google.protobuf.MethodOptions\x18\x9e( \x01(\v2 .dotjoshrc.oapi.v1.MethodOptionsR\x06methodB\xd3\x01\n" +
+	"\x15com.dotjoshrc.oapi.v1B\vMethodProtoP\x01ZGgithub.com/dotjoshrc/protoc-gen-openapi/gen/go/dotjoshrc/oapi/v1;oapiv1\xa2\x02\x03DOX\xaa\x02\x11Dotjoshrc.Oapi.V1\xca\x02\x11Dotjoshrc\\Oapi\\V1\xe2\x02\x1dDotjoshrc\\Oapi\\V1\\GPBMetadata\xea\x02\x13Dotjoshrc::Oapi::V1b\x06proto3"
 
 var (
-	file_method_proto_rawDescOnce sync.Once
-	file_method_proto_rawDescData []byte
+	file_dotjoshrc_oapi_v1_method_proto_rawDescOnce sync.Once
+	file_dotjoshrc_oapi_v1_method_proto_rawDescData []byte
 )
 
-func file_method_proto_rawDescGZIP() []byte {
-	file_method_proto_rawDescOnce.Do(func() {
-		file_method_proto_rawDescData = protoimpl.X.CompressGZIP(unsafe.Slice(unsafe.StringData(file_method_proto_rawDesc), len(file_method_proto_rawDesc)))
+func file_dotjoshrc_oapi_v1_method_proto_rawDescGZIP() []byte {
+	file_dotjoshrc_oapi_v1_method_proto_rawDescOnce.Do(func() {
+		file_dotjoshrc_oapi_v1_method_proto_rawDescData = protoimpl.X.CompressGZIP(unsafe.Slice(unsafe.StringData(file_dotjoshrc_oapi_v1_method_proto_rawDesc), len(file_dotjoshrc_oapi_v1_method_proto_rawDesc)))
 	})
-	return file_method_proto_rawDescData
+	return file_dotjoshrc_oapi_v1_method_proto_rawDescData
 }
 
-var file_method_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
-var file_method_proto_goTypes = []any{
-	(*MethodOptions)(nil),              // 0: oapi.v1.MethodOptions
-	(*Parameter)(nil),                  // 1: oapi.v1.Parameter
-	(*Security)(nil),                   // 2: oapi.v1.Security
-	(*Server)(nil),                     // 3: oapi.v1.Server
+var file_dotjoshrc_oapi_v1_method_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
+var file_dotjoshrc_oapi_v1_method_proto_goTypes = []any{
+	(*MethodOptions)(nil),              // 0: dotjoshrc.oapi.v1.MethodOptions
+	(*Parameter)(nil),                  // 1: dotjoshrc.oapi.v1.Parameter
+	(*Security)(nil),                   // 2: dotjoshrc.oapi.v1.Security
+	(*Server)(nil),                     // 3: dotjoshrc.oapi.v1.Server
 	(*descriptorpb.MethodOptions)(nil), // 4: google.protobuf.MethodOptions
 }
-var file_method_proto_depIdxs = []int32{
-	1, // 0: oapi.v1.MethodOptions.path_parameter:type_name -> oapi.v1.Parameter
-	1, // 1: oapi.v1.MethodOptions.query_parameter:type_name -> oapi.v1.Parameter
-	1, // 2: oapi.v1.MethodOptions.header_parameter:type_name -> oapi.v1.Parameter
-	1, // 3: oapi.v1.MethodOptions.cookie_parameter:type_name -> oapi.v1.Parameter
-	2, // 4: oapi.v1.MethodOptions.security:type_name -> oapi.v1.Security
-	3, // 5: oapi.v1.MethodOptions.servers:type_name -> oapi.v1.Server
-	3, // 6: oapi.v1.MethodOptions.add_servers:type_name -> oapi.v1.Server
-	4, // 7: oapi.v1.method:extendee -> google.protobuf.MethodOptions
-	0, // 8: oapi.v1.method:type_name -> oapi.v1.MethodOptions
+var file_dotjoshrc_oapi_v1_method_proto_depIdxs = []int32{
+	1, // 0: dotjoshrc.oapi.v1.MethodOptions.path_parameter:type_name -> dotjoshrc.oapi.v1.Parameter
+	1, // 1: dotjoshrc.oapi.v1.MethodOptions.query_parameter:type_name -> dotjoshrc.oapi.v1.Parameter
+	1, // 2: dotjoshrc.oapi.v1.MethodOptions.header_parameter:type_name -> dotjoshrc.oapi.v1.Parameter
+	1, // 3: dotjoshrc.oapi.v1.MethodOptions.cookie_parameter:type_name -> dotjoshrc.oapi.v1.Parameter
+	2, // 4: dotjoshrc.oapi.v1.MethodOptions.security:type_name -> dotjoshrc.oapi.v1.Security
+	3, // 5: dotjoshrc.oapi.v1.MethodOptions.servers:type_name -> dotjoshrc.oapi.v1.Server
+	3, // 6: dotjoshrc.oapi.v1.MethodOptions.add_servers:type_name -> dotjoshrc.oapi.v1.Server
+	4, // 7: dotjoshrc.oapi.v1.method:extendee -> google.protobuf.MethodOptions
+	0, // 8: dotjoshrc.oapi.v1.method:type_name -> dotjoshrc.oapi.v1.MethodOptions
 	9, // [9:9] is the sub-list for method output_type
 	9, // [9:9] is the sub-list for method input_type
 	8, // [8:9] is the sub-list for extension type_name
@@ -368,15 +368,15 @@ var file_method_proto_depIdxs = []int32{
 	0, // [0:7] is the sub-list for field type_name
 }
 
-func init() { file_method_proto_init() }
-func file_method_proto_init() {
-	if File_method_proto != nil {
+func init() { file_dotjoshrc_oapi_v1_method_proto_init() }
+func file_dotjoshrc_oapi_v1_method_proto_init() {
+	if File_dotjoshrc_oapi_v1_method_proto != nil {
 		return
 	}
-	file_parameter_proto_init()
-	file_security_proto_init()
-	file_server_proto_init()
-	file_method_proto_msgTypes[0].OneofWrappers = []any{
+	file_dotjoshrc_oapi_v1_parameter_proto_init()
+	file_dotjoshrc_oapi_v1_security_proto_init()
+	file_dotjoshrc_oapi_v1_server_proto_init()
+	file_dotjoshrc_oapi_v1_method_proto_msgTypes[0].OneofWrappers = []any{
 		(*MethodOptions_Get)(nil),
 		(*MethodOptions_Put)(nil),
 		(*MethodOptions_Post)(nil),
@@ -387,18 +387,18 @@ func file_method_proto_init() {
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: unsafe.Slice(unsafe.StringData(file_method_proto_rawDesc), len(file_method_proto_rawDesc)),
+			RawDescriptor: unsafe.Slice(unsafe.StringData(file_dotjoshrc_oapi_v1_method_proto_rawDesc), len(file_dotjoshrc_oapi_v1_method_proto_rawDesc)),
 			NumEnums:      0,
 			NumMessages:   1,
 			NumExtensions: 1,
 			NumServices:   0,
 		},
-		GoTypes:           file_method_proto_goTypes,
-		DependencyIndexes: file_method_proto_depIdxs,
-		MessageInfos:      file_method_proto_msgTypes,
-		ExtensionInfos:    file_method_proto_extTypes,
+		GoTypes:           file_dotjoshrc_oapi_v1_method_proto_goTypes,
+		DependencyIndexes: file_dotjoshrc_oapi_v1_method_proto_depIdxs,
+		MessageInfos:      file_dotjoshrc_oapi_v1_method_proto_msgTypes,
+		ExtensionInfos:    file_dotjoshrc_oapi_v1_method_proto_extTypes,
 	}.Build()
-	File_method_proto = out.File
-	file_method_proto_goTypes = nil
-	file_method_proto_depIdxs = nil
+	File_dotjoshrc_oapi_v1_method_proto = out.File
+	file_dotjoshrc_oapi_v1_method_proto_goTypes = nil
+	file_dotjoshrc_oapi_v1_method_proto_depIdxs = nil
 }

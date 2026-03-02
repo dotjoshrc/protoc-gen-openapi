@@ -8,6 +8,5 @@ lint:
   except:
     - PACKAGE_DIRECTORY_MATCH
 modules:
-  - path: proto/oapi/v1
-    # TODO: Change this to dotjoshrc
-    name: buf.build/technicallyjosh/protoc-gen-openapi
+  - path: proto/openapi
+    name: buf.build/dotjoshrc/openapi

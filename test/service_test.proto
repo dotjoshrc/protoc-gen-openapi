@@ -2,12 +2,12 @@ syntax = "proto3";
 
 package test.api;
 
-import "oapi/v1/file.proto";
-import "oapi/v1/method.proto";
-import "oapi/v1/service.proto";
+import "dotjoshrc/oapi/v1/file.proto";
+import "dotjoshrc/oapi/v1/method.proto";
+import "dotjoshrc/oapi/v1/service.proto";
 
 option go_package = "github.com/dotjoshrc/protoc-gen-openapi/test/api";
-option (oapi.v1.file) = {
+option (dotjoshrc.oapi.v1.file) = {
   servers: {url: "swagger.io"}
   prefix: "/v1"
 
@@ -30,7 +30,7 @@ option (oapi.v1.file) = {
 };
 
 service TestService {
-  option (oapi.v1.service) = {
+  option (dotjoshrc.oapi.v1.service) = {
     servers: {url: "api.swagger.io"}
     add_servers: {url: "api.added.io"}
     x_display_name: "Test Service"
@@ -38,11 +38,11 @@ service TestService {
   };
 
   rpc TestGet(TestGetRequest) returns (TestGetResponse) {
-    option (oapi.v1.method) = {get: "TestGet"};
+    option (dotjoshrc.oapi.v1.method) = {get: "TestGet"};
   }
 
   rpc TestPost(TestPostRequest) returns (TestPostResponse) {
-    option (oapi.v1.method) = {
+    option (dotjoshrc.oapi.v1.method) = {
       post: "TestPost"
       security: {}
     };
@@ -50,14 +50,14 @@ service TestService {
 }
 
 service Test2Service {
-  option (oapi.v1.service) = {
+  option (dotjoshrc.oapi.v1.service) = {
     add_servers: {url: "api.added.io"}
     x_display_name: "Test 2 Service"
     x_tag_group: "Test 2 Group"
   };
 
   rpc TestGet(TestGetRequest) returns (TestGetResponse) {
-    option (oapi.v1.method) = {get: "Test2Get"};
+    option (dotjoshrc.oapi.v1.method) = {get: "Test2Get"};
   }
 }
 

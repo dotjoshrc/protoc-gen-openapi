@@ -11,7 +11,7 @@ import (
 	"google.golang.org/protobuf/reflect/protoreflect"
 	"google.golang.org/protobuf/types/descriptorpb"
 
-	oapiv1 "github.com/dotjoshrc/protoc-gen-openapi/internal/gen/go/oapi/v1"
+	oapiv1 "github.com/dotjoshrc/protoc-gen-openapi/gen/go/dotjoshrc/oapi/v1"
 	"github.com/dotjoshrc/protoc-gen-openapi/internal/generator/util"
 )
 
