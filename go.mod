@@ -1,4 +1,4 @@
-module github.com/technicallyjosh/protoc-gen-openapi
+module github.com/dotjoshrc/protoc-gen-openapi
 
 go 1.20
 
