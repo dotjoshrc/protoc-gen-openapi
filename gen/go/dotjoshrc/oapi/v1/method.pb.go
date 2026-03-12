@@ -286,16 +286,16 @@ var file_dotjoshrc_oapi_v1_method_proto_extTypes = []protoimpl.ExtensionInfo{
 	{
 		ExtendedType:  (*descriptorpb.MethodOptions)(nil),
 		ExtensionType: (*MethodOptions)(nil),
-		Field:         5150,
+		Field:         6150,
 		Name:          "dotjoshrc.oapi.v1.method",
-		Tag:           "bytes,5150,opt,name=method",
+		Tag:           "bytes,6150,opt,name=method",
 		Filename:      "dotjoshrc/oapi/v1/method.proto",
 	},
 }
 
 // Extension fields to descriptorpb.MethodOptions.
 var (
-	// optional dotjoshrc.oapi.v1.MethodOptions method = 5150;
+	// optional dotjoshrc.oapi.v1.MethodOptions method = 6150;
 	E_Method = &file_dotjoshrc_oapi_v1_method_proto_extTypes[0]
 )
 
@@ -328,7 +328,7 @@ const file_dotjoshrc_oapi_v1_method_proto_rawDesc = "" +
 	"\vadd_servers\x18\x12 \x03(\v2\x19.dotjoshrc.oapi.v1.ServerR\n" +
 	"addServersB\b\n" +
 	"\x06method:Y\n" +
-	"\x06method\x12\x1e.google.protobuf.MethodOptions\x18\x9e( \x01(\v2 .dotjoshrc.oapi.v1.MethodOptionsR\x06methodB\xd3\x01\n" +
+	"\x06method\x12\x1e.google.protobuf.MethodOptions\x18\x860 \x01(\v2 .dotjoshrc.oapi.v1.MethodOptionsR\x06methodB\xd3\x01\n" +
 	"\x15com.dotjoshrc.oapi.v1B\vMethodProtoP\x01ZGgithub.com/dotjoshrc/protoc-gen-openapi/gen/go/dotjoshrc/oapi/v1;oapiv1\xa2\x02\x03DOX\xaa\x02\x11Dotjoshrc.Oapi.V1\xca\x02\x11Dotjoshrc\\Oapi\\V1\xe2\x02\x1dDotjoshrc\\Oapi\\V1\\GPBMetadata\xea\x02\x13Dotjoshrc::Oapi::V1b\x06proto3"
 
 var (

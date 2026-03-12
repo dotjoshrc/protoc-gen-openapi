@@ -189,16 +189,16 @@ var file_dotjoshrc_oapi_v1_service_proto_extTypes = []protoimpl.ExtensionInfo{
 	{
 		ExtendedType:  (*descriptorpb.ServiceOptions)(nil),
 		ExtensionType: (*ServiceOptions)(nil),
-		Field:         5150,
+		Field:         6150,
 		Name:          "dotjoshrc.oapi.v1.service",
-		Tag:           "bytes,5150,opt,name=service",
+		Tag:           "bytes,6150,opt,name=service",
 		Filename:      "dotjoshrc/oapi/v1/service.proto",
 	},
 }
 
 // Extension fields to descriptorpb.ServiceOptions.
 var (
-	// optional dotjoshrc.oapi.v1.ServiceOptions service = 5150;
+	// optional dotjoshrc.oapi.v1.ServiceOptions service = 6150;
 	E_Service = &file_dotjoshrc_oapi_v1_service_proto_extTypes[0]
 )
 
@@ -223,7 +223,7 @@ const file_dotjoshrc_oapi_v1_service_proto_rawDesc = "" +
 	"\aservers\x18\f \x03(\v2\x19.dotjoshrc.oapi.v1.ServerR\aservers\x12:\n" +
 	"\vadd_servers\x18\r \x03(\v2\x19.dotjoshrc.oapi.v1.ServerR\n" +
 	"addServers:]\n" +
-	"\aservice\x12\x1f.google.protobuf.ServiceOptions\x18\x9e( \x01(\v2!.dotjoshrc.oapi.v1.ServiceOptionsR\aserviceB\xd4\x01\n" +
+	"\aservice\x12\x1f.google.protobuf.ServiceOptions\x18\x860 \x01(\v2!.dotjoshrc.oapi.v1.ServiceOptionsR\aserviceB\xd4\x01\n" +
 	"\x15com.dotjoshrc.oapi.v1B\fServiceProtoP\x01ZGgithub.com/dotjoshrc/protoc-gen-openapi/gen/go/dotjoshrc/oapi/v1;oapiv1\xa2\x02\x03DOX\xaa\x02\x11Dotjoshrc.Oapi.V1\xca\x02\x11Dotjoshrc\\Oapi\\V1\xe2\x02\x1dDotjoshrc\\Oapi\\V1\\GPBMetadata\xea\x02\x13Dotjoshrc::Oapi::V1b\x06proto3"
 
 var (

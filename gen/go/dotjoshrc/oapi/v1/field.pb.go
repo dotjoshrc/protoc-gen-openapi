@@ -219,25 +219,25 @@ var file_dotjoshrc_oapi_v1_field_proto_extTypes = []protoimpl.ExtensionInfo{
 	{
 		ExtendedType:  (*descriptorpb.FieldOptions)(nil),
 		ExtensionType: (*bool)(nil),
-		Field:         5150,
+		Field:         6150,
 		Name:          "dotjoshrc.oapi.v1.required",
-		Tag:           "varint,5150,opt,name=required",
+		Tag:           "varint,6150,opt,name=required",
 		Filename:      "dotjoshrc/oapi/v1/field.proto",
 	},
 	{
 		ExtendedType:  (*descriptorpb.FieldOptions)(nil),
 		ExtensionType: (*string)(nil),
-		Field:         5151,
+		Field:         6151,
 		Name:          "dotjoshrc.oapi.v1.example",
-		Tag:           "bytes,5151,opt,name=example",
+		Tag:           "bytes,6151,opt,name=example",
 		Filename:      "dotjoshrc/oapi/v1/field.proto",
 	},
 	{
 		ExtendedType:  (*descriptorpb.FieldOptions)(nil),
 		ExtensionType: (*FieldOptions)(nil),
-		Field:         5152,
+		Field:         6152,
 		Name:          "dotjoshrc.oapi.v1.options",
-		Tag:           "bytes,5152,opt,name=options",
+		Tag:           "bytes,6152,opt,name=options",
 		Filename:      "dotjoshrc/oapi/v1/field.proto",
 	},
 }
@@ -246,16 +246,16 @@ var file_dotjoshrc_oapi_v1_field_proto_extTypes = []protoimpl.ExtensionInfo{
 var (
 	// Marks the field as required.
 	//
-	// optional bool required = 5150;
+	// optional bool required = 6150;
 	E_Required = &file_dotjoshrc_oapi_v1_field_proto_extTypes[0]
 	// Value for the example on the field. This overrides any examples in
 	// comments.
 	//
-	// optional string example = 5151;
+	// optional string example = 6151;
 	E_Example = &file_dotjoshrc_oapi_v1_field_proto_extTypes[1]
 	// Options for a field.
 	//
-	// optional dotjoshrc.oapi.v1.FieldOptions options = 5152;
+	// optional dotjoshrc.oapi.v1.FieldOptions options = 6152;
 	E_Options = &file_dotjoshrc_oapi_v1_field_proto_extTypes[2]
 )
 
@@ -306,9 +306,9 @@ const file_dotjoshrc_oapi_v1_field_proto_rawDesc = "" +
 	"\a_formatB\n" +
 	"\n" +
 	"\b_as_type::\n" +
-	"\brequired\x12\x1d.google.protobuf.FieldOptions\x18\x9e( \x01(\bR\brequired:8\n" +
-	"\aexample\x12\x1d.google.protobuf.FieldOptions\x18\x9f( \x01(\tR\aexample:Y\n" +
-	"\aoptions\x12\x1d.google.protobuf.FieldOptions\x18\xa0( \x01(\v2\x1f.dotjoshrc.oapi.v1.FieldOptionsR\aoptionsB\xd2\x01\n" +
+	"\brequired\x12\x1d.google.protobuf.FieldOptions\x18\x860 \x01(\bR\brequired:8\n" +
+	"\aexample\x12\x1d.google.protobuf.FieldOptions\x18\x870 \x01(\tR\aexample:Y\n" +
+	"\aoptions\x12\x1d.google.protobuf.FieldOptions\x18\x880 \x01(\v2\x1f.dotjoshrc.oapi.v1.FieldOptionsR\aoptionsB\xd2\x01\n" +
 	"\x15com.dotjoshrc.oapi.v1B\n" +
 	"FieldProtoP\x01ZGgithub.com/dotjoshrc/protoc-gen-openapi/gen/go/dotjoshrc/oapi/v1;oapiv1\xa2\x02\x03DOX\xaa\x02\x11Dotjoshrc.Oapi.V1\xca\x02\x11Dotjoshrc\\Oapi\\V1\xe2\x02\x1dDotjoshrc\\Oapi\\V1\\GPBMetadata\xea\x02\x13Dotjoshrc::Oapi::V1b\x06proto3"
 

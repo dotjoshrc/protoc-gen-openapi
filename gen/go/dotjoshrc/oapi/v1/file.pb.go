@@ -114,16 +114,16 @@ var file_dotjoshrc_oapi_v1_file_proto_extTypes = []protoimpl.ExtensionInfo{
 	{
 		ExtendedType:  (*descriptorpb.FileOptions)(nil),
 		ExtensionType: (*FileOptions)(nil),
-		Field:         5150,
+		Field:         6150,
 		Name:          "dotjoshrc.oapi.v1.file",
-		Tag:           "bytes,5150,opt,name=file",
+		Tag:           "bytes,6150,opt,name=file",
 		Filename:      "dotjoshrc/oapi/v1/file.proto",
 	},
 }
 
 // Extension fields to descriptorpb.FileOptions.
 var (
-	// optional dotjoshrc.oapi.v1.FileOptions file = 5150;
+	// optional dotjoshrc.oapi.v1.FileOptions file = 6150;
 	E_File = &file_dotjoshrc_oapi_v1_file_proto_extTypes[0]
 )
 
@@ -138,7 +138,7 @@ const file_dotjoshrc_oapi_v1_file_proto_rawDesc = "" +
 	"\x10security_schemes\x18\x03 \x03(\v2!.dotjoshrc.oapi.v1.SecuritySchemeR\x0fsecuritySchemes\x127\n" +
 	"\bsecurity\x18\x04 \x03(\v2\x1b.dotjoshrc.oapi.v1.SecurityR\bsecurity\x123\n" +
 	"\aservers\x18\x05 \x03(\v2\x19.dotjoshrc.oapi.v1.ServerR\aservers:Q\n" +
-	"\x04file\x12\x1c.google.protobuf.FileOptions\x18\x9e( \x01(\v2\x1e.dotjoshrc.oapi.v1.FileOptionsR\x04fileB\xd1\x01\n" +
+	"\x04file\x12\x1c.google.protobuf.FileOptions\x18\x860 \x01(\v2\x1e.dotjoshrc.oapi.v1.FileOptionsR\x04fileB\xd1\x01\n" +
 	"\x15com.dotjoshrc.oapi.v1B\tFileProtoP\x01ZGgithub.com/dotjoshrc/protoc-gen-openapi/gen/go/dotjoshrc/oapi/v1;oapiv1\xa2\x02\x03DOX\xaa\x02\x11Dotjoshrc.Oapi.V1\xca\x02\x11Dotjoshrc\\Oapi\\V1\xe2\x02\x1dDotjoshrc\\Oapi\\V1\\GPBMetadata\xea\x02\x13Dotjoshrc::Oapi::V1b\x06proto3"
 
 var (

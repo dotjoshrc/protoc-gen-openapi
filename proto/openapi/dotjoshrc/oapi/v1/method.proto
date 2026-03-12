@@ -10,7 +10,7 @@ import "google/protobuf/descriptor.proto";
 option go_package = "github.com/dotjoshrc/protoc-gen-openapi/gen/go/dotjoshrc/oapi/v1;oapiv1";
 
 extend google.protobuf.MethodOptions {
-  MethodOptions method = 5150;
+  MethodOptions method = 6150;
 }
 
 message MethodOptions {

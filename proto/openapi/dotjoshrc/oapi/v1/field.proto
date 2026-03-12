@@ -8,14 +8,14 @@ option go_package = "github.com/dotjoshrc/protoc-gen-openapi/gen/go/dotjoshrc/oa
 
 extend google.protobuf.FieldOptions {
   // Marks the field as required.
-  bool required = 5150;
+  bool required = 6150;
 
   // Value for the example on the field. This overrides any examples in
   // comments.
-  string example = 5151;
+  string example = 6151;
 
   // Options for a field.
-  FieldOptions options = 5152;
+  FieldOptions options = 6152;
 }
 
 message FieldOptions {

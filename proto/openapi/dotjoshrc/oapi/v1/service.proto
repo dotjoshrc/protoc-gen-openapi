@@ -10,7 +10,7 @@ import "google/protobuf/descriptor.proto";
 option go_package = "github.com/dotjoshrc/protoc-gen-openapi/gen/go/dotjoshrc/oapi/v1;oapiv1";
 
 extend google.protobuf.ServiceOptions {
-  ServiceOptions service = 5150;
+  ServiceOptions service = 6150;
 }
 
 message ServiceOptions {
